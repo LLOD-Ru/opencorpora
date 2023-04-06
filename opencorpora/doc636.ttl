@@ -1,0 +1,212 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix schema: <http://schema.org/>.
+@prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#>.
+@prefix conll: <http://purl.org/acoli/conll#>.
+@prefix opencorpora: <http://lod.opencorpora.org/ontology#>.
+
+<http://lod.opencorpora.org/documents/doc636>
+  a foaf:Document;
+  dcterms:title "0019293";
+  dcterms:created "2010-06-12"^^xsd:date;
+  owl:sameAs <http://naglaya-ryjaya.livejournal.com/19293.html>.
+
+<http://lod.opencorpora.org/documents/doc636/char=0,30>
+  a nif:String, nif:Context, nif:OffsetBasedString;
+  rdfs:label 
+    "Текст документа №636 “0019293”"@ru,
+    "Text of the document#636 “0019293”"@en;
+  conll:DOCUMENT_ID "636";
+  nif:isString """она безумно красивая. до ужаса""";
+  nif:beginIndex "0"^^xsd:int;
+  nif:endIndex "30"^^xsd:int;
+  opencorpora:belongsToCollection 
+    <http://lod.opencorpora.org/opencorpora>;
+  nif:sourceUrl 
+    <http://lod.opencorpora.org/documents/doc636>.
+
+<http://lod.opencorpora.org/documents/doc636/char=0,21>
+  a nif:String, nif:Sentence, nif:OffsetBasedString;
+  rdfs:label 
+    "Предложение №1 документа №636 “она безумно красивая.”"@ru,
+    "Sentence #1 of the document #636 “она безумно красивая.”"@en;
+  conll:SENTENCE_ID "23615";
+  opencorpora:sentenceNumber "1"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc636/char=0,30>;
+  nif:anchorOf """она безумно красивая.""";
+  nif:beginIndex "0"^^xsd:int;
+  nif:endIndex "21"^^xsd:int;
+  nif:nextSentence 
+    <http://lod.opencorpora.org/documents/doc636/char=22,30>;
+  nif:firstWord 
+    <http://lod.opencorpora.org/documents/doc636/char=0,3>;
+  nif:word 
+    <http://lod.opencorpora.org/documents/doc636/char=0,3>,
+    <http://lod.opencorpora.org/documents/doc636/char=4,11>,
+    <http://lod.opencorpora.org/documents/doc636/char=12,20>,
+    <http://lod.opencorpora.org/documents/doc636/char=20,21>.
+
+<http://lod.opencorpora.org/documents/doc636/char=0,3>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №1 предложения №1 документа №636 “она”"@ru,
+    "Word #1 of the sentence #1 of the document #636 “она”"@en;
+  conll:ID "431079";
+  opencorpora:wordNumber "1"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc636/char=0,30>;
+  nif:anchorOf "она";
+  nif:beginIndex "0"^^xsd:int;
+  nif:endIndex "3"^^xsd:int;
+  nif:lemma "она"@ru;
+  nif:posTag "NPRO";
+  conll:POS_URI opencorpora:NPRO;
+  nif:oliaLink 
+    opencorpora:NPRO,
+    opencorpora:femn,
+    opencorpora:3per,
+    opencorpora:Anph,
+    opencorpora:sing,
+    opencorpora:nomn;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc636/char=0,21>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc636/char=4,11>.
+
+<http://lod.opencorpora.org/documents/doc636/char=4,11>
+  a nif:String, nif:Word, nif:OffsetBasedString;
+  rdfs:label 
+    "Слово №2 предложения №1 документа №636 “безумно”"@ru,
+    "Word #2 of the sentence #1 of the document #636 “безумно”"@en;
+  conll:ID "431080";
+  opencorpora:wordNumber "2"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc636/char=0,30>;
+  nif:anchorOf "безумно";
+  nif:beginIndex "4"^^xsd:int;
+  nif:endIndex "11"^^xsd:int;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc636/char=0,21>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc636/char=0,3>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc636/char=12,20>.
+
+<http://lod.opencorpora.org/documents/doc636/char=12,20>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №3 предложения №1 документа №636 “красивая”"@ru,
+    "Word #3 of the sentence #1 of the document #636 “красивая”"@en;
+  conll:ID "431081";
+  opencorpora:wordNumber "3"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc636/char=0,30>;
+  nif:anchorOf "красивая";
+  nif:beginIndex "12"^^xsd:int;
+  nif:endIndex "20"^^xsd:int;
+  nif:lemma "красивый"@ru;
+  nif:posTag "ADJF";
+  conll:POS_URI opencorpora:ADJF;
+  nif:oliaLink 
+    opencorpora:ADJF,
+    opencorpora:Qual,
+    opencorpora:femn,
+    opencorpora:sing,
+    opencorpora:nomn;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc636/char=0,21>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc636/char=4,11>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc636/char=20,21>.
+
+<http://lod.opencorpora.org/documents/doc636/char=20,21>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №4 предложения №1 документа №636 “.”"@ru,
+    "Word #4 of the sentence #1 of the document #636 “.”"@en;
+  conll:ID "431082";
+  opencorpora:wordNumber "4"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc636/char=0,30>;
+  nif:anchorOf ".";
+  nif:beginIndex "20"^^xsd:int;
+  nif:endIndex "21"^^xsd:int;
+  nif:lemma "."@ru;
+  nif:posTag "PNCT";
+  conll:POS_URI opencorpora:PNCT;
+  nif:oliaLink 
+    opencorpora:PNCT;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc636/char=0,21>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc636/char=12,20>.
+
+<http://lod.opencorpora.org/documents/doc636/char=22,30>
+  a nif:String, nif:Sentence, nif:OffsetBasedString, opencorpora:FullyMorphologicallyDisambiguated;
+  rdfs:label 
+    "Предложение №2 документа №636 “до ужаса”"@ru,
+    "Sentence #2 of the document #636 “до ужаса”"@en;
+  conll:SENTENCE_ID "23616";
+  opencorpora:sentenceNumber "2"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc636/char=0,30>;
+  nif:anchorOf """до ужаса""";
+  nif:beginIndex "22"^^xsd:int;
+  nif:endIndex "30"^^xsd:int;
+  nif:previousSentence 
+    <http://lod.opencorpora.org/documents/doc636/char=0,21>;
+  nif:firstWord 
+    <http://lod.opencorpora.org/documents/doc636/char=22,24>;
+  nif:word 
+    <http://lod.opencorpora.org/documents/doc636/char=22,24>,
+    <http://lod.opencorpora.org/documents/doc636/char=25,30>.
+
+<http://lod.opencorpora.org/documents/doc636/char=22,24>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №1 предложения №2 документа №636 “до”"@ru,
+    "Word #1 of the sentence #2 of the document #636 “до”"@en;
+  conll:ID "431083";
+  opencorpora:wordNumber "1"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc636/char=0,30>;
+  nif:anchorOf "до";
+  nif:beginIndex "22"^^xsd:int;
+  nif:endIndex "24"^^xsd:int;
+  nif:lemma "до"@ru;
+  nif:posTag "PREP";
+  conll:POS_URI opencorpora:PREP;
+  nif:oliaLink 
+    opencorpora:PREP;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc636/char=22,30>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc636/char=25,30>.
+
+<http://lod.opencorpora.org/documents/doc636/char=25,30>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №2 предложения №2 документа №636 “ужаса”"@ru,
+    "Word #2 of the sentence #2 of the document #636 “ужаса”"@en;
+  conll:ID "431084";
+  opencorpora:wordNumber "2"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc636/char=0,30>;
+  nif:anchorOf "ужаса";
+  nif:beginIndex "25"^^xsd:int;
+  nif:endIndex "30"^^xsd:int;
+  nif:lemma "ужас"@ru;
+  nif:posTag "NOUN";
+  conll:POS_URI opencorpora:NOUN;
+  nif:oliaLink 
+    opencorpora:NOUN,
+    opencorpora:inan,
+    opencorpora:masc,
+    opencorpora:sing,
+    opencorpora:gent;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc636/char=22,30>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc636/char=22,24>.
+
+

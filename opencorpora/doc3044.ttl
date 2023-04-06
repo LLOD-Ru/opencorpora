@@ -1,0 +1,688 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix schema: <http://schema.org/>.
+@prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#>.
+@prefix conll: <http://purl.org/acoli/conll#>.
+@prefix opencorpora: <http://lod.opencorpora.org/ontology#>.
+
+<http://lod.opencorpora.org/documents/doc3044>
+  a foaf:Document;
+  dcterms:title "Банк Эритреи";
+  owl:sameAs <http://ru.wikipedia.org/w/index.php?title=%D0%91%D0%B0%D0%BD%D0%BA_%D0%AD%D1%80%D0%B8%D1%82%D1%80%D0%B5%D0%B8&oldid=51018946>.
+
+<http://lod.opencorpora.org/documents/doc3044/char=0,143>
+  a nif:String, nif:Context, nif:OffsetBasedString;
+  rdfs:label 
+    "Текст документа №3044 “Банк Эритреи”"@ru,
+    "Text of the document#3044 “Банк Эритреи”"@en;
+  conll:DOCUMENT_ID "3044";
+  nif:isString """Банк Эритреи
+Банк Эритреи (англ. Bank of Eritrea) — центральный банк Эритреи; государственное учреждение, независимое от Министерства финансов.""";
+  nif:beginIndex "0"^^xsd:int;
+  nif:endIndex "143"^^xsd:int;
+  opencorpora:belongsToCollection 
+    <http://lod.opencorpora.org/opencorpora>;
+  nif:sourceUrl 
+    <http://lod.opencorpora.org/documents/doc3044>.
+
+<http://lod.opencorpora.org/documents/doc3044/char=0,12>
+  a nif:String, nif:Sentence, nif:OffsetBasedString, opencorpora:FullyMorphologicallyDisambiguated;
+  rdfs:label 
+    "Предложение №1 документа №3044 “Банк Эритреи”"@ru,
+    "Sentence #1 of the document #3044 “Банк Эритреи”"@en;
+  conll:SENTENCE_ID "73175";
+  opencorpora:sentenceNumber "1"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc3044/char=0,143>;
+  nif:anchorOf """Банк Эритреи""";
+  nif:beginIndex "0"^^xsd:int;
+  nif:endIndex "12"^^xsd:int;
+  nif:nextSentence 
+    <http://lod.opencorpora.org/documents/doc3044/char=13,143>;
+  nif:firstWord 
+    <http://lod.opencorpora.org/documents/doc3044/char=0,4>;
+  nif:word 
+    <http://lod.opencorpora.org/documents/doc3044/char=0,4>,
+    <http://lod.opencorpora.org/documents/doc3044/char=5,12>.
+
+<http://lod.opencorpora.org/documents/doc3044/char=0,4>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №1 предложения №1 документа №3044 “Банк”"@ru,
+    "Word #1 of the sentence #1 of the document #3044 “Банк”"@en;
+  conll:ID "1315892";
+  opencorpora:wordNumber "1"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc3044/char=0,143>;
+  nif:anchorOf "Банк";
+  nif:beginIndex "0"^^xsd:int;
+  nif:endIndex "4"^^xsd:int;
+  nif:lemma "банк"@ru;
+  nif:posTag "NOUN";
+  conll:POS_URI opencorpora:NOUN;
+  nif:oliaLink 
+    opencorpora:NOUN,
+    opencorpora:inan,
+    opencorpora:masc,
+    opencorpora:sing,
+    opencorpora:nomn;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc3044/char=0,12>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc3044/char=5,12>.
+
+<http://lod.opencorpora.org/documents/doc3044/char=5,12>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №2 предложения №1 документа №3044 “Эритреи”"@ru,
+    "Word #2 of the sentence #1 of the document #3044 “Эритреи”"@en;
+  conll:ID "1315893";
+  opencorpora:wordNumber "2"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc3044/char=0,143>;
+  nif:anchorOf "Эритреи";
+  nif:beginIndex "5"^^xsd:int;
+  nif:endIndex "12"^^xsd:int;
+  nif:lemma "эритрея"@ru;
+  nif:posTag "NOUN";
+  conll:POS_URI opencorpora:NOUN;
+  nif:oliaLink 
+    opencorpora:NOUN,
+    opencorpora:inan,
+    opencorpora:femn,
+    opencorpora:Sgtm,
+    opencorpora:Geox,
+    opencorpora:sing,
+    opencorpora:gent;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc3044/char=0,12>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc3044/char=0,4>.
+
+<http://lod.opencorpora.org/documents/doc3044/char=13,143>
+  a nif:String, nif:Sentence, nif:OffsetBasedString;
+  rdfs:label 
+    "Предложение №2 документа №3044 “Банк Эритреи (англ. Bank of Eritrea) — центральный банк Эритреи; государственное учреждение, независ...”"@ru,
+    "Sentence #2 of the document #3044 “Банк Эритреи (англ. Bank of Eritrea) — центральный банк Эритреи; государственное учреждение, независ...”"@en;
+  conll:SENTENCE_ID "73176";
+  opencorpora:sentenceNumber "2"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc3044/char=0,143>;
+  nif:anchorOf """Банк Эритреи (англ. Bank of Eritrea) — центральный банк Эритреи; государственное учреждение, независимое от Министерства финансов.""";
+  nif:beginIndex "13"^^xsd:int;
+  nif:endIndex "143"^^xsd:int;
+  nif:previousSentence 
+    <http://lod.opencorpora.org/documents/doc3044/char=0,12>;
+  nif:firstWord 
+    <http://lod.opencorpora.org/documents/doc3044/char=13,17>;
+  nif:word 
+    <http://lod.opencorpora.org/documents/doc3044/char=13,17>,
+    <http://lod.opencorpora.org/documents/doc3044/char=18,25>,
+    <http://lod.opencorpora.org/documents/doc3044/char=26,27>,
+    <http://lod.opencorpora.org/documents/doc3044/char=27,31>,
+    <http://lod.opencorpora.org/documents/doc3044/char=31,32>,
+    <http://lod.opencorpora.org/documents/doc3044/char=33,37>,
+    <http://lod.opencorpora.org/documents/doc3044/char=38,40>,
+    <http://lod.opencorpora.org/documents/doc3044/char=41,48>,
+    <http://lod.opencorpora.org/documents/doc3044/char=48,49>,
+    <http://lod.opencorpora.org/documents/doc3044/char=50,51>,
+    <http://lod.opencorpora.org/documents/doc3044/char=52,63>,
+    <http://lod.opencorpora.org/documents/doc3044/char=64,68>,
+    <http://lod.opencorpora.org/documents/doc3044/char=69,76>,
+    <http://lod.opencorpora.org/documents/doc3044/char=76,77>,
+    <http://lod.opencorpora.org/documents/doc3044/char=78,93>,
+    <http://lod.opencorpora.org/documents/doc3044/char=94,104>,
+    <http://lod.opencorpora.org/documents/doc3044/char=104,105>,
+    <http://lod.opencorpora.org/documents/doc3044/char=106,117>,
+    <http://lod.opencorpora.org/documents/doc3044/char=118,120>,
+    <http://lod.opencorpora.org/documents/doc3044/char=121,133>,
+    <http://lod.opencorpora.org/documents/doc3044/char=134,142>,
+    <http://lod.opencorpora.org/documents/doc3044/char=142,143>.
+
+<http://lod.opencorpora.org/documents/doc3044/char=13,17>
+  a nif:String, nif:Word, nif:OffsetBasedString;
+  rdfs:label 
+    "Слово №1 предложения №2 документа №3044 “Банк”"@ru,
+    "Word #1 of the sentence #2 of the document #3044 “Банк”"@en;
+  conll:ID "1315894";
+  opencorpora:wordNumber "1"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc3044/char=0,143>;
+  nif:anchorOf "Банк";
+  nif:beginIndex "13"^^xsd:int;
+  nif:endIndex "17"^^xsd:int;
+  nif:lemma "банк"@ru;
+  nif:posTag "NOUN";
+  conll:POS_URI opencorpora:NOUN;
+  nif:oliaLink 
+    opencorpora:NOUN,
+    opencorpora:inan,
+    opencorpora:masc,
+    opencorpora:sing;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc3044/char=13,143>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc3044/char=18,25>.
+
+<http://lod.opencorpora.org/documents/doc3044/char=18,25>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №2 предложения №2 документа №3044 “Эритреи”"@ru,
+    "Word #2 of the sentence #2 of the document #3044 “Эритреи”"@en;
+  conll:ID "1315895";
+  opencorpora:wordNumber "2"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc3044/char=0,143>;
+  nif:anchorOf "Эритреи";
+  nif:beginIndex "18"^^xsd:int;
+  nif:endIndex "25"^^xsd:int;
+  nif:lemma "эритрея"@ru;
+  nif:posTag "NOUN";
+  conll:POS_URI opencorpora:NOUN;
+  nif:oliaLink 
+    opencorpora:NOUN,
+    opencorpora:inan,
+    opencorpora:femn,
+    opencorpora:Sgtm,
+    opencorpora:Geox,
+    opencorpora:sing,
+    opencorpora:gent;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc3044/char=13,143>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc3044/char=13,17>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc3044/char=26,27>.
+
+<http://lod.opencorpora.org/documents/doc3044/char=26,27>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №3 предложения №2 документа №3044 “(”"@ru,
+    "Word #3 of the sentence #2 of the document #3044 “(”"@en;
+  conll:ID "1315896";
+  opencorpora:wordNumber "3"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc3044/char=0,143>;
+  nif:anchorOf "(";
+  nif:beginIndex "26"^^xsd:int;
+  nif:endIndex "27"^^xsd:int;
+  nif:lemma "("@ru;
+  nif:posTag "PNCT";
+  conll:POS_URI opencorpora:PNCT;
+  nif:oliaLink 
+    opencorpora:PNCT;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc3044/char=13,143>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc3044/char=18,25>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc3044/char=27,31>.
+
+<http://lod.opencorpora.org/documents/doc3044/char=27,31>
+  a nif:String, nif:Word, nif:OffsetBasedString;
+  rdfs:label 
+    "Слово №4 предложения №2 документа №3044 “англ”"@ru,
+    "Word #4 of the sentence #2 of the document #3044 “англ”"@en;
+  conll:ID "1315897";
+  opencorpora:wordNumber "4"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc3044/char=0,143>;
+  nif:anchorOf "англ";
+  nif:beginIndex "27"^^xsd:int;
+  nif:endIndex "31"^^xsd:int;
+  nif:lemma "англ"@ru;
+  nif:posTag "ADJF";
+  conll:POS_URI opencorpora:ADJF;
+  nif:oliaLink 
+    opencorpora:ADJF,
+    opencorpora:Fixd,
+    opencorpora:Abbr,
+    opencorpora:sing;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc3044/char=13,143>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc3044/char=26,27>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc3044/char=31,32>.
+
+<http://lod.opencorpora.org/documents/doc3044/char=31,32>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №5 предложения №2 документа №3044 “.”"@ru,
+    "Word #5 of the sentence #2 of the document #3044 “.”"@en;
+  conll:ID "1315898";
+  opencorpora:wordNumber "5"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc3044/char=0,143>;
+  nif:anchorOf ".";
+  nif:beginIndex "31"^^xsd:int;
+  nif:endIndex "32"^^xsd:int;
+  nif:lemma "."@ru;
+  nif:posTag "PNCT";
+  conll:POS_URI opencorpora:PNCT;
+  nif:oliaLink 
+    opencorpora:PNCT;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc3044/char=13,143>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc3044/char=27,31>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc3044/char=33,37>.
+
+<http://lod.opencorpora.org/documents/doc3044/char=33,37>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №6 предложения №2 документа №3044 “Bank”"@ru,
+    "Word #6 of the sentence #2 of the document #3044 “Bank”"@en;
+  conll:ID "1315899";
+  opencorpora:wordNumber "6"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc3044/char=0,143>;
+  nif:anchorOf "Bank";
+  nif:beginIndex "33"^^xsd:int;
+  nif:endIndex "37"^^xsd:int;
+  nif:lemma "Bank"@ru;
+  nif:posTag "LATN";
+  conll:POS_URI opencorpora:LATN;
+  nif:oliaLink 
+    opencorpora:LATN;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc3044/char=13,143>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc3044/char=31,32>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc3044/char=38,40>.
+
+<http://lod.opencorpora.org/documents/doc3044/char=38,40>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №7 предложения №2 документа №3044 “of”"@ru,
+    "Word #7 of the sentence #2 of the document #3044 “of”"@en;
+  conll:ID "1315900";
+  opencorpora:wordNumber "7"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc3044/char=0,143>;
+  nif:anchorOf "of";
+  nif:beginIndex "38"^^xsd:int;
+  nif:endIndex "40"^^xsd:int;
+  nif:lemma "of"@ru;
+  nif:posTag "LATN";
+  conll:POS_URI opencorpora:LATN;
+  nif:oliaLink 
+    opencorpora:LATN;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc3044/char=13,143>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc3044/char=33,37>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc3044/char=41,48>.
+
+<http://lod.opencorpora.org/documents/doc3044/char=41,48>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №8 предложения №2 документа №3044 “Eritrea”"@ru,
+    "Word #8 of the sentence #2 of the document #3044 “Eritrea”"@en;
+  conll:ID "1315901";
+  opencorpora:wordNumber "8"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc3044/char=0,143>;
+  nif:anchorOf "Eritrea";
+  nif:beginIndex "41"^^xsd:int;
+  nif:endIndex "48"^^xsd:int;
+  nif:lemma "Eritrea"@ru;
+  nif:posTag "LATN";
+  conll:POS_URI opencorpora:LATN;
+  nif:oliaLink 
+    opencorpora:LATN;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc3044/char=13,143>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc3044/char=38,40>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc3044/char=48,49>.
+
+<http://lod.opencorpora.org/documents/doc3044/char=48,49>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №9 предложения №2 документа №3044 “)”"@ru,
+    "Word #9 of the sentence #2 of the document #3044 “)”"@en;
+  conll:ID "1315902";
+  opencorpora:wordNumber "9"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc3044/char=0,143>;
+  nif:anchorOf ")";
+  nif:beginIndex "48"^^xsd:int;
+  nif:endIndex "49"^^xsd:int;
+  nif:lemma ")"@ru;
+  nif:posTag "PNCT";
+  conll:POS_URI opencorpora:PNCT;
+  nif:oliaLink 
+    opencorpora:PNCT;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc3044/char=13,143>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc3044/char=41,48>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc3044/char=50,51>.
+
+<http://lod.opencorpora.org/documents/doc3044/char=50,51>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №10 предложения №2 документа №3044 “—”"@ru,
+    "Word #10 of the sentence #2 of the document #3044 “—”"@en;
+  conll:ID "1315903";
+  opencorpora:wordNumber "10"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc3044/char=0,143>;
+  nif:anchorOf "—";
+  nif:beginIndex "50"^^xsd:int;
+  nif:endIndex "51"^^xsd:int;
+  nif:lemma "—"@ru;
+  nif:posTag "PNCT";
+  conll:POS_URI opencorpora:PNCT;
+  nif:oliaLink 
+    opencorpora:PNCT;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc3044/char=13,143>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc3044/char=48,49>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc3044/char=52,63>.
+
+<http://lod.opencorpora.org/documents/doc3044/char=52,63>
+  a nif:String, nif:Word, nif:OffsetBasedString;
+  rdfs:label 
+    "Слово №11 предложения №2 документа №3044 “центральный”"@ru,
+    "Word #11 of the sentence #2 of the document #3044 “центральный”"@en;
+  conll:ID "1315904";
+  opencorpora:wordNumber "11"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc3044/char=0,143>;
+  nif:anchorOf "центральный";
+  nif:beginIndex "52"^^xsd:int;
+  nif:endIndex "63"^^xsd:int;
+  nif:lemma "центральный"@ru;
+  nif:posTag "ADJF";
+  conll:POS_URI opencorpora:ADJF;
+  nif:oliaLink 
+    opencorpora:ADJF,
+    opencorpora:masc,
+    opencorpora:sing;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc3044/char=13,143>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc3044/char=50,51>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc3044/char=64,68>.
+
+<http://lod.opencorpora.org/documents/doc3044/char=64,68>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №12 предложения №2 документа №3044 “банк”"@ru,
+    "Word #12 of the sentence #2 of the document #3044 “банк”"@en;
+  conll:ID "1315905";
+  opencorpora:wordNumber "12"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc3044/char=0,143>;
+  nif:anchorOf "банк";
+  nif:beginIndex "64"^^xsd:int;
+  nif:endIndex "68"^^xsd:int;
+  nif:lemma "банк"@ru;
+  nif:posTag "NOUN";
+  conll:POS_URI opencorpora:NOUN;
+  nif:oliaLink 
+    opencorpora:NOUN,
+    opencorpora:inan,
+    opencorpora:masc,
+    opencorpora:sing,
+    opencorpora:nomn;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc3044/char=13,143>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc3044/char=52,63>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc3044/char=69,76>.
+
+<http://lod.opencorpora.org/documents/doc3044/char=69,76>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №13 предложения №2 документа №3044 “Эритреи”"@ru,
+    "Word #13 of the sentence #2 of the document #3044 “Эритреи”"@en;
+  conll:ID "1315906";
+  opencorpora:wordNumber "13"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc3044/char=0,143>;
+  nif:anchorOf "Эритреи";
+  nif:beginIndex "69"^^xsd:int;
+  nif:endIndex "76"^^xsd:int;
+  nif:lemma "эритрея"@ru;
+  nif:posTag "NOUN";
+  conll:POS_URI opencorpora:NOUN;
+  nif:oliaLink 
+    opencorpora:NOUN,
+    opencorpora:inan,
+    opencorpora:femn,
+    opencorpora:Sgtm,
+    opencorpora:Geox,
+    opencorpora:sing,
+    opencorpora:gent;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc3044/char=13,143>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc3044/char=64,68>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc3044/char=76,77>.
+
+<http://lod.opencorpora.org/documents/doc3044/char=76,77>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №14 предложения №2 документа №3044 “;”"@ru,
+    "Word #14 of the sentence #2 of the document #3044 “;”"@en;
+  conll:ID "1315907";
+  opencorpora:wordNumber "14"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc3044/char=0,143>;
+  nif:anchorOf ";";
+  nif:beginIndex "76"^^xsd:int;
+  nif:endIndex "77"^^xsd:int;
+  nif:lemma ";"@ru;
+  nif:posTag "PNCT";
+  conll:POS_URI opencorpora:PNCT;
+  nif:oliaLink 
+    opencorpora:PNCT;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc3044/char=13,143>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc3044/char=69,76>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc3044/char=78,93>.
+
+<http://lod.opencorpora.org/documents/doc3044/char=78,93>
+  a nif:String, nif:Word, nif:OffsetBasedString;
+  rdfs:label 
+    "Слово №15 предложения №2 документа №3044 “государственное”"@ru,
+    "Word #15 of the sentence #2 of the document #3044 “государственное”"@en;
+  conll:ID "1315908";
+  opencorpora:wordNumber "15"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc3044/char=0,143>;
+  nif:anchorOf "государственное";
+  nif:beginIndex "78"^^xsd:int;
+  nif:endIndex "93"^^xsd:int;
+  nif:lemma "государственный"@ru;
+  nif:posTag "ADJF";
+  conll:POS_URI opencorpora:ADJF;
+  nif:oliaLink 
+    opencorpora:ADJF,
+    opencorpora:neut,
+    opencorpora:sing;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc3044/char=13,143>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc3044/char=76,77>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc3044/char=94,104>.
+
+<http://lod.opencorpora.org/documents/doc3044/char=94,104>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №16 предложения №2 документа №3044 “учреждение”"@ru,
+    "Word #16 of the sentence #2 of the document #3044 “учреждение”"@en;
+  conll:ID "1315909";
+  opencorpora:wordNumber "16"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc3044/char=0,143>;
+  nif:anchorOf "учреждение";
+  nif:beginIndex "94"^^xsd:int;
+  nif:endIndex "104"^^xsd:int;
+  nif:lemma "учреждение"@ru;
+  nif:posTag "NOUN";
+  conll:POS_URI opencorpora:NOUN;
+  nif:oliaLink 
+    opencorpora:NOUN,
+    opencorpora:inan,
+    opencorpora:neut,
+    opencorpora:sing,
+    opencorpora:nomn;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc3044/char=13,143>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc3044/char=78,93>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc3044/char=104,105>.
+
+<http://lod.opencorpora.org/documents/doc3044/char=104,105>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №17 предложения №2 документа №3044 “,”"@ru,
+    "Word #17 of the sentence #2 of the document #3044 “,”"@en;
+  conll:ID "1315910";
+  opencorpora:wordNumber "17"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc3044/char=0,143>;
+  nif:anchorOf ",";
+  nif:beginIndex "104"^^xsd:int;
+  nif:endIndex "105"^^xsd:int;
+  nif:lemma ","@ru;
+  nif:posTag "PNCT";
+  conll:POS_URI opencorpora:PNCT;
+  nif:oliaLink 
+    opencorpora:PNCT;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc3044/char=13,143>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc3044/char=94,104>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc3044/char=106,117>.
+
+<http://lod.opencorpora.org/documents/doc3044/char=106,117>
+  a nif:String, nif:Word, nif:OffsetBasedString;
+  rdfs:label 
+    "Слово №18 предложения №2 документа №3044 “независимое”"@ru,
+    "Word #18 of the sentence #2 of the document #3044 “независимое”"@en;
+  conll:ID "1315911";
+  opencorpora:wordNumber "18"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc3044/char=0,143>;
+  nif:anchorOf "независимое";
+  nif:beginIndex "106"^^xsd:int;
+  nif:endIndex "117"^^xsd:int;
+  nif:lemma "независимый"@ru;
+  nif:posTag "ADJF";
+  conll:POS_URI opencorpora:ADJF;
+  nif:oliaLink 
+    opencorpora:ADJF,
+    opencorpora:Qual,
+    opencorpora:neut,
+    opencorpora:sing;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc3044/char=13,143>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc3044/char=104,105>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc3044/char=118,120>.
+
+<http://lod.opencorpora.org/documents/doc3044/char=118,120>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №19 предложения №2 документа №3044 “от”"@ru,
+    "Word #19 of the sentence #2 of the document #3044 “от”"@en;
+  conll:ID "1315912";
+  opencorpora:wordNumber "19"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc3044/char=0,143>;
+  nif:anchorOf "от";
+  nif:beginIndex "118"^^xsd:int;
+  nif:endIndex "120"^^xsd:int;
+  nif:lemma "от"@ru;
+  nif:posTag "PREP";
+  conll:POS_URI opencorpora:PREP;
+  nif:oliaLink 
+    opencorpora:PREP;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc3044/char=13,143>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc3044/char=106,117>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc3044/char=121,133>.
+
+<http://lod.opencorpora.org/documents/doc3044/char=121,133>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №20 предложения №2 документа №3044 “Министерства”"@ru,
+    "Word #20 of the sentence #2 of the document #3044 “Министерства”"@en;
+  conll:ID "1315913";
+  opencorpora:wordNumber "20"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc3044/char=0,143>;
+  nif:anchorOf "Министерства";
+  nif:beginIndex "121"^^xsd:int;
+  nif:endIndex "133"^^xsd:int;
+  nif:lemma "министерство"@ru;
+  nif:posTag "NOUN";
+  conll:POS_URI opencorpora:NOUN;
+  nif:oliaLink 
+    opencorpora:NOUN,
+    opencorpora:inan,
+    opencorpora:neut,
+    opencorpora:sing,
+    opencorpora:gent;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc3044/char=13,143>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc3044/char=118,120>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc3044/char=134,142>.
+
+<http://lod.opencorpora.org/documents/doc3044/char=134,142>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №21 предложения №2 документа №3044 “финансов”"@ru,
+    "Word #21 of the sentence #2 of the document #3044 “финансов”"@en;
+  conll:ID "1315914";
+  opencorpora:wordNumber "21"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc3044/char=0,143>;
+  nif:anchorOf "финансов";
+  nif:beginIndex "134"^^xsd:int;
+  nif:endIndex "142"^^xsd:int;
+  nif:lemma "финансы"@ru;
+  nif:posTag "NOUN";
+  conll:POS_URI opencorpora:NOUN;
+  nif:oliaLink 
+    opencorpora:NOUN,
+    opencorpora:inan,
+    opencorpora:GNdr,
+    opencorpora:Pltm,
+    opencorpora:plur,
+    opencorpora:gent;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc3044/char=13,143>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc3044/char=121,133>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc3044/char=142,143>.
+
+<http://lod.opencorpora.org/documents/doc3044/char=142,143>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №22 предложения №2 документа №3044 “.”"@ru,
+    "Word #22 of the sentence #2 of the document #3044 “.”"@en;
+  conll:ID "1315915";
+  opencorpora:wordNumber "22"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc3044/char=0,143>;
+  nif:anchorOf ".";
+  nif:beginIndex "142"^^xsd:int;
+  nif:endIndex "143"^^xsd:int;
+  nif:lemma "."@ru;
+  nif:posTag "PNCT";
+  conll:POS_URI opencorpora:PNCT;
+  nif:oliaLink 
+    opencorpora:PNCT;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc3044/char=13,143>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc3044/char=134,142>.
+
+

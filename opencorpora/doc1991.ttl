@@ -1,0 +1,997 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix schema: <http://schema.org/>.
+@prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#>.
+@prefix conll: <http://purl.org/acoli/conll#>.
+@prefix opencorpora: <http://lod.opencorpora.org/ontology#>.
+
+<http://lod.opencorpora.org/documents/doc1991>
+  a foaf:Document;
+  dcterms:title "Статья 36. Гражданская процессуальная правоспособность".
+
+<http://lod.opencorpora.org/documents/doc1991/char=0,280>
+  a nif:String, nif:Context, nif:OffsetBasedString;
+  rdfs:label 
+    "Текст документа №1991 “Статья 36. Гражданская процессуальная правоспособность”"@ru,
+    "Text of the document#1991 “Статья 36. Гражданская процессуальная правоспособность”"@en;
+  conll:DOCUMENT_ID "1991";
+  nif:isString """Статья 36. Гражданская процессуальная правоспособность
+Гражданская процессуальная правоспособность признается в равной мере за всеми гражданами и организациями, обладающими согласно законодательству Российской Федерации правом на судебную защиту прав, свобод и законных интересов.""";
+  nif:beginIndex "0"^^xsd:int;
+  nif:endIndex "280"^^xsd:int;
+  opencorpora:belongsToCollection 
+    <http://lod.opencorpora.org/opencorpora>;
+  nif:sourceUrl 
+    <http://lod.opencorpora.org/documents/doc1991>.
+
+<http://lod.opencorpora.org/documents/doc1991/char=0,10>
+  a nif:String, nif:Sentence, nif:OffsetBasedString, opencorpora:FullyMorphologicallyDisambiguated;
+  rdfs:label 
+    "Предложение №1 документа №1991 “Статья 36.”"@ru,
+    "Sentence #1 of the document #1991 “Статья 36.”"@en;
+  conll:SENTENCE_ID "48675";
+  opencorpora:sentenceNumber "1"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1991/char=0,280>;
+  nif:anchorOf """Статья 36.""";
+  nif:beginIndex "0"^^xsd:int;
+  nif:endIndex "10"^^xsd:int;
+  nif:nextSentence 
+    <http://lod.opencorpora.org/documents/doc1991/char=11,54>;
+  nif:firstWord 
+    <http://lod.opencorpora.org/documents/doc1991/char=0,6>;
+  nif:word 
+    <http://lod.opencorpora.org/documents/doc1991/char=0,6>,
+    <http://lod.opencorpora.org/documents/doc1991/char=7,9>,
+    <http://lod.opencorpora.org/documents/doc1991/char=9,10>.
+
+<http://lod.opencorpora.org/documents/doc1991/char=0,6>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №1 предложения №1 документа №1991 “Статья”"@ru,
+    "Word #1 of the sentence #1 of the document #1991 “Статья”"@en;
+  conll:ID "883526";
+  opencorpora:wordNumber "1"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1991/char=0,280>;
+  nif:anchorOf "Статья";
+  nif:beginIndex "0"^^xsd:int;
+  nif:endIndex "6"^^xsd:int;
+  nif:lemma "статья"@ru;
+  nif:posTag "NOUN";
+  conll:POS_URI opencorpora:NOUN;
+  nif:oliaLink 
+    opencorpora:NOUN,
+    opencorpora:inan,
+    opencorpora:femn,
+    opencorpora:sing,
+    opencorpora:nomn;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1991/char=0,10>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1991/char=7,9>.
+
+<http://lod.opencorpora.org/documents/doc1991/char=7,9>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №2 предложения №1 документа №1991 “36”"@ru,
+    "Word #2 of the sentence #1 of the document #1991 “36”"@en;
+  conll:ID "883527";
+  opencorpora:wordNumber "2"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1991/char=0,280>;
+  nif:anchorOf "36";
+  nif:beginIndex "7"^^xsd:int;
+  nif:endIndex "9"^^xsd:int;
+  nif:lemma "36"@ru;
+  nif:posTag "NUMB";
+  conll:POS_URI opencorpora:NUMB;
+  nif:oliaLink 
+    opencorpora:NUMB;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1991/char=0,10>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1991/char=0,6>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1991/char=9,10>.
+
+<http://lod.opencorpora.org/documents/doc1991/char=9,10>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №3 предложения №1 документа №1991 “.”"@ru,
+    "Word #3 of the sentence #1 of the document #1991 “.”"@en;
+  conll:ID "883528";
+  opencorpora:wordNumber "3"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1991/char=0,280>;
+  nif:anchorOf ".";
+  nif:beginIndex "9"^^xsd:int;
+  nif:endIndex "10"^^xsd:int;
+  nif:lemma "."@ru;
+  nif:posTag "PNCT";
+  conll:POS_URI opencorpora:PNCT;
+  nif:oliaLink 
+    opencorpora:PNCT;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1991/char=0,10>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1991/char=7,9>.
+
+<http://lod.opencorpora.org/documents/doc1991/char=11,54>
+  a nif:String, nif:Sentence, nif:OffsetBasedString;
+  rdfs:label 
+    "Предложение №2 документа №1991 “Гражданская процессуальная правоспособность”"@ru,
+    "Sentence #2 of the document #1991 “Гражданская процессуальная правоспособность”"@en;
+  conll:SENTENCE_ID "48676";
+  opencorpora:sentenceNumber "2"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1991/char=0,280>;
+  nif:anchorOf """Гражданская процессуальная правоспособность""";
+  nif:beginIndex "11"^^xsd:int;
+  nif:endIndex "54"^^xsd:int;
+  nif:previousSentence 
+    <http://lod.opencorpora.org/documents/doc1991/char=0,10>;
+  nif:nextSentence 
+    <http://lod.opencorpora.org/documents/doc1991/char=55,280>;
+  nif:firstWord 
+    <http://lod.opencorpora.org/documents/doc1991/char=11,22>;
+  nif:word 
+    <http://lod.opencorpora.org/documents/doc1991/char=11,22>,
+    <http://lod.opencorpora.org/documents/doc1991/char=23,37>,
+    <http://lod.opencorpora.org/documents/doc1991/char=38,54>.
+
+<http://lod.opencorpora.org/documents/doc1991/char=11,22>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №1 предложения №2 документа №1991 “Гражданская”"@ru,
+    "Word #1 of the sentence #2 of the document #1991 “Гражданская”"@en;
+  conll:ID "883529";
+  opencorpora:wordNumber "1"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1991/char=0,280>;
+  nif:anchorOf "Гражданская";
+  nif:beginIndex "11"^^xsd:int;
+  nif:endIndex "22"^^xsd:int;
+  nif:lemma "гражданский"@ru;
+  nif:posTag "ADJF";
+  conll:POS_URI opencorpora:ADJF;
+  nif:oliaLink 
+    opencorpora:ADJF,
+    opencorpora:femn,
+    opencorpora:sing,
+    opencorpora:nomn;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1991/char=11,54>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1991/char=23,37>.
+
+<http://lod.opencorpora.org/documents/doc1991/char=23,37>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №2 предложения №2 документа №1991 “процессуальная”"@ru,
+    "Word #2 of the sentence #2 of the document #1991 “процессуальная”"@en;
+  conll:ID "883530";
+  opencorpora:wordNumber "2"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1991/char=0,280>;
+  nif:anchorOf "процессуальная";
+  nif:beginIndex "23"^^xsd:int;
+  nif:endIndex "37"^^xsd:int;
+  nif:lemma "процессуальный"@ru;
+  nif:posTag "ADJF";
+  conll:POS_URI opencorpora:ADJF;
+  nif:oliaLink 
+    opencorpora:ADJF,
+    opencorpora:femn,
+    opencorpora:sing,
+    opencorpora:nomn;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1991/char=11,54>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1991/char=11,22>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1991/char=38,54>.
+
+<http://lod.opencorpora.org/documents/doc1991/char=38,54>
+  a nif:String, nif:Word, nif:OffsetBasedString;
+  rdfs:label 
+    "Слово №3 предложения №2 документа №1991 “правоспособность”"@ru,
+    "Word #3 of the sentence #2 of the document #1991 “правоспособность”"@en;
+  conll:ID "883531";
+  opencorpora:wordNumber "3"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1991/char=0,280>;
+  nif:anchorOf "правоспособность";
+  nif:beginIndex "38"^^xsd:int;
+  nif:endIndex "54"^^xsd:int;
+  nif:lemma "правоспособность"@ru;
+  nif:posTag "NOUN";
+  conll:POS_URI opencorpora:NOUN;
+  nif:oliaLink 
+    opencorpora:NOUN,
+    opencorpora:inan,
+    opencorpora:femn,
+    opencorpora:sing;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1991/char=11,54>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1991/char=23,37>.
+
+<http://lod.opencorpora.org/documents/doc1991/char=55,280>
+  a nif:String, nif:Sentence, nif:OffsetBasedString;
+  rdfs:label 
+    "Предложение №3 документа №1991 “Гражданская процессуальная правоспособность признается в равной мере за всеми гражданами и организац...”"@ru,
+    "Sentence #3 of the document #1991 “Гражданская процессуальная правоспособность признается в равной мере за всеми гражданами и организац...”"@en;
+  conll:SENTENCE_ID "48677";
+  opencorpora:sentenceNumber "3"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1991/char=0,280>;
+  nif:anchorOf """Гражданская процессуальная правоспособность признается в равной мере за всеми гражданами и организациями, обладающими согласно законодательству Российской Федерации правом на судебную защиту прав, свобод и законных интересов.""";
+  nif:beginIndex "55"^^xsd:int;
+  nif:endIndex "280"^^xsd:int;
+  nif:previousSentence 
+    <http://lod.opencorpora.org/documents/doc1991/char=11,54>;
+  nif:firstWord 
+    <http://lod.opencorpora.org/documents/doc1991/char=55,66>;
+  nif:word 
+    <http://lod.opencorpora.org/documents/doc1991/char=55,66>,
+    <http://lod.opencorpora.org/documents/doc1991/char=67,81>,
+    <http://lod.opencorpora.org/documents/doc1991/char=82,98>,
+    <http://lod.opencorpora.org/documents/doc1991/char=99,109>,
+    <http://lod.opencorpora.org/documents/doc1991/char=110,111>,
+    <http://lod.opencorpora.org/documents/doc1991/char=112,118>,
+    <http://lod.opencorpora.org/documents/doc1991/char=119,123>,
+    <http://lod.opencorpora.org/documents/doc1991/char=124,126>,
+    <http://lod.opencorpora.org/documents/doc1991/char=127,132>,
+    <http://lod.opencorpora.org/documents/doc1991/char=133,143>,
+    <http://lod.opencorpora.org/documents/doc1991/char=144,145>,
+    <http://lod.opencorpora.org/documents/doc1991/char=146,159>,
+    <http://lod.opencorpora.org/documents/doc1991/char=159,160>,
+    <http://lod.opencorpora.org/documents/doc1991/char=161,172>,
+    <http://lod.opencorpora.org/documents/doc1991/char=173,181>,
+    <http://lod.opencorpora.org/documents/doc1991/char=182,198>,
+    <http://lod.opencorpora.org/documents/doc1991/char=199,209>,
+    <http://lod.opencorpora.org/documents/doc1991/char=210,219>,
+    <http://lod.opencorpora.org/documents/doc1991/char=220,226>,
+    <http://lod.opencorpora.org/documents/doc1991/char=227,229>,
+    <http://lod.opencorpora.org/documents/doc1991/char=230,238>,
+    <http://lod.opencorpora.org/documents/doc1991/char=239,245>,
+    <http://lod.opencorpora.org/documents/doc1991/char=246,250>,
+    <http://lod.opencorpora.org/documents/doc1991/char=250,251>,
+    <http://lod.opencorpora.org/documents/doc1991/char=252,258>,
+    <http://lod.opencorpora.org/documents/doc1991/char=259,260>,
+    <http://lod.opencorpora.org/documents/doc1991/char=261,269>,
+    <http://lod.opencorpora.org/documents/doc1991/char=270,279>,
+    <http://lod.opencorpora.org/documents/doc1991/char=279,280>.
+
+<http://lod.opencorpora.org/documents/doc1991/char=55,66>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №1 предложения №3 документа №1991 “Гражданская”"@ru,
+    "Word #1 of the sentence #3 of the document #1991 “Гражданская”"@en;
+  conll:ID "883532";
+  opencorpora:wordNumber "1"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1991/char=0,280>;
+  nif:anchorOf "Гражданская";
+  nif:beginIndex "55"^^xsd:int;
+  nif:endIndex "66"^^xsd:int;
+  nif:lemma "гражданский"@ru;
+  nif:posTag "ADJF";
+  conll:POS_URI opencorpora:ADJF;
+  nif:oliaLink 
+    opencorpora:ADJF,
+    opencorpora:femn,
+    opencorpora:sing,
+    opencorpora:nomn;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1991/char=55,280>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1991/char=67,81>.
+
+<http://lod.opencorpora.org/documents/doc1991/char=67,81>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №2 предложения №3 документа №1991 “процессуальная”"@ru,
+    "Word #2 of the sentence #3 of the document #1991 “процессуальная”"@en;
+  conll:ID "883533";
+  opencorpora:wordNumber "2"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1991/char=0,280>;
+  nif:anchorOf "процессуальная";
+  nif:beginIndex "67"^^xsd:int;
+  nif:endIndex "81"^^xsd:int;
+  nif:lemma "процессуальный"@ru;
+  nif:posTag "ADJF";
+  conll:POS_URI opencorpora:ADJF;
+  nif:oliaLink 
+    opencorpora:ADJF,
+    opencorpora:femn,
+    opencorpora:sing,
+    opencorpora:nomn;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1991/char=55,280>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1991/char=55,66>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1991/char=82,98>.
+
+<http://lod.opencorpora.org/documents/doc1991/char=82,98>
+  a nif:String, nif:Word, nif:OffsetBasedString;
+  rdfs:label 
+    "Слово №3 предложения №3 документа №1991 “правоспособность”"@ru,
+    "Word #3 of the sentence #3 of the document #1991 “правоспособность”"@en;
+  conll:ID "883534";
+  opencorpora:wordNumber "3"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1991/char=0,280>;
+  nif:anchorOf "правоспособность";
+  nif:beginIndex "82"^^xsd:int;
+  nif:endIndex "98"^^xsd:int;
+  nif:lemma "правоспособность"@ru;
+  nif:posTag "NOUN";
+  conll:POS_URI opencorpora:NOUN;
+  nif:oliaLink 
+    opencorpora:NOUN,
+    opencorpora:inan,
+    opencorpora:femn,
+    opencorpora:sing;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1991/char=55,280>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1991/char=67,81>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1991/char=99,109>.
+
+<http://lod.opencorpora.org/documents/doc1991/char=99,109>
+  a nif:String, nif:Word, nif:OffsetBasedString;
+  rdfs:label 
+    "Слово №4 предложения №3 документа №1991 “признается”"@ru,
+    "Word #4 of the sentence #3 of the document #1991 “признается”"@en;
+  conll:ID "883535";
+  opencorpora:wordNumber "4"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1991/char=0,280>;
+  nif:anchorOf "признается";
+  nif:beginIndex "99"^^xsd:int;
+  nif:endIndex "109"^^xsd:int;
+  nif:posTag "VERB";
+  conll:POS_URI opencorpora:VERB;
+  nif:oliaLink 
+    opencorpora:VERB,
+    opencorpora:intr,
+    opencorpora:sing,
+    opencorpora:3per,
+    opencorpora:indc;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1991/char=55,280>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1991/char=82,98>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1991/char=110,111>.
+
+<http://lod.opencorpora.org/documents/doc1991/char=110,111>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №5 предложения №3 документа №1991 “в”"@ru,
+    "Word #5 of the sentence #3 of the document #1991 “в”"@en;
+  conll:ID "883536";
+  opencorpora:wordNumber "5"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1991/char=0,280>;
+  nif:anchorOf "в";
+  nif:beginIndex "110"^^xsd:int;
+  nif:endIndex "111"^^xsd:int;
+  nif:lemma "в"@ru;
+  nif:posTag "PREP";
+  conll:POS_URI opencorpora:PREP;
+  nif:oliaLink 
+    opencorpora:PREP;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1991/char=55,280>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1991/char=99,109>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1991/char=112,118>.
+
+<http://lod.opencorpora.org/documents/doc1991/char=112,118>
+  a nif:String, nif:Word, nif:OffsetBasedString;
+  rdfs:label 
+    "Слово №6 предложения №3 документа №1991 “равной”"@ru,
+    "Word #6 of the sentence #3 of the document #1991 “равной”"@en;
+  conll:ID "883537";
+  opencorpora:wordNumber "6"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1991/char=0,280>;
+  nif:anchorOf "равной";
+  nif:beginIndex "112"^^xsd:int;
+  nif:endIndex "118"^^xsd:int;
+  nif:lemma "равный"@ru;
+  nif:posTag "ADJF";
+  conll:POS_URI opencorpora:ADJF;
+  nif:oliaLink 
+    opencorpora:ADJF,
+    opencorpora:Qual,
+    opencorpora:femn,
+    opencorpora:sing;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1991/char=55,280>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1991/char=110,111>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1991/char=119,123>.
+
+<http://lod.opencorpora.org/documents/doc1991/char=119,123>
+  a nif:String, nif:Word, nif:OffsetBasedString;
+  rdfs:label 
+    "Слово №7 предложения №3 документа №1991 “мере”"@ru,
+    "Word #7 of the sentence #3 of the document #1991 “мере”"@en;
+  conll:ID "883538";
+  opencorpora:wordNumber "7"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1991/char=0,280>;
+  nif:anchorOf "мере";
+  nif:beginIndex "119"^^xsd:int;
+  nif:endIndex "123"^^xsd:int;
+  nif:posTag "NOUN";
+  conll:POS_URI opencorpora:NOUN;
+  nif:oliaLink 
+    opencorpora:NOUN,
+    opencorpora:inan,
+    opencorpora:femn,
+    opencorpora:sing,
+    opencorpora:loct;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1991/char=55,280>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1991/char=112,118>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1991/char=124,126>.
+
+<http://lod.opencorpora.org/documents/doc1991/char=124,126>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №8 предложения №3 документа №1991 “за”"@ru,
+    "Word #8 of the sentence #3 of the document #1991 “за”"@en;
+  conll:ID "883539";
+  opencorpora:wordNumber "8"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1991/char=0,280>;
+  nif:anchorOf "за";
+  nif:beginIndex "124"^^xsd:int;
+  nif:endIndex "126"^^xsd:int;
+  nif:lemma "за"@ru;
+  nif:posTag "PREP";
+  conll:POS_URI opencorpora:PREP;
+  nif:oliaLink 
+    opencorpora:PREP;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1991/char=55,280>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1991/char=119,123>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1991/char=127,132>.
+
+<http://lod.opencorpora.org/documents/doc1991/char=127,132>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №9 предложения №3 документа №1991 “всеми”"@ru,
+    "Word #9 of the sentence #3 of the document #1991 “всеми”"@en;
+  conll:ID "883540";
+  opencorpora:wordNumber "9"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1991/char=0,280>;
+  nif:anchorOf "всеми";
+  nif:beginIndex "127"^^xsd:int;
+  nif:endIndex "132"^^xsd:int;
+  nif:lemma "весь"@ru;
+  nif:posTag "ADJF";
+  conll:POS_URI opencorpora:ADJF;
+  nif:oliaLink 
+    opencorpora:ADJF,
+    opencorpora:Subx,
+    opencorpora:Apro,
+    opencorpora:plur,
+    opencorpora:ablt;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1991/char=55,280>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1991/char=124,126>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1991/char=133,143>.
+
+<http://lod.opencorpora.org/documents/doc1991/char=133,143>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №10 предложения №3 документа №1991 “гражданами”"@ru,
+    "Word #10 of the sentence #3 of the document #1991 “гражданами”"@en;
+  conll:ID "883541";
+  opencorpora:wordNumber "10"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1991/char=0,280>;
+  nif:anchorOf "гражданами";
+  nif:beginIndex "133"^^xsd:int;
+  nif:endIndex "143"^^xsd:int;
+  nif:lemma "гражданин"@ru;
+  nif:posTag "NOUN";
+  conll:POS_URI opencorpora:NOUN;
+  nif:oliaLink 
+    opencorpora:NOUN,
+    opencorpora:anim,
+    opencorpora:masc,
+    opencorpora:plur,
+    opencorpora:ablt;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1991/char=55,280>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1991/char=127,132>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1991/char=144,145>.
+
+<http://lod.opencorpora.org/documents/doc1991/char=144,145>
+  a nif:String, nif:Word, nif:OffsetBasedString;
+  rdfs:label 
+    "Слово №11 предложения №3 документа №1991 “и”"@ru,
+    "Word #11 of the sentence #3 of the document #1991 “и”"@en;
+  conll:ID "883542";
+  opencorpora:wordNumber "11"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1991/char=0,280>;
+  nif:anchorOf "и";
+  nif:beginIndex "144"^^xsd:int;
+  nif:endIndex "145"^^xsd:int;
+  nif:lemma "и"@ru;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1991/char=55,280>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1991/char=133,143>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1991/char=146,159>.
+
+<http://lod.opencorpora.org/documents/doc1991/char=146,159>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №12 предложения №3 документа №1991 “организациями”"@ru,
+    "Word #12 of the sentence #3 of the document #1991 “организациями”"@en;
+  conll:ID "883543";
+  opencorpora:wordNumber "12"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1991/char=0,280>;
+  nif:anchorOf "организациями";
+  nif:beginIndex "146"^^xsd:int;
+  nif:endIndex "159"^^xsd:int;
+  nif:lemma "организация"@ru;
+  nif:posTag "NOUN";
+  conll:POS_URI opencorpora:NOUN;
+  nif:oliaLink 
+    opencorpora:NOUN,
+    opencorpora:inan,
+    opencorpora:femn,
+    opencorpora:plur,
+    opencorpora:ablt;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1991/char=55,280>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1991/char=144,145>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1991/char=159,160>.
+
+<http://lod.opencorpora.org/documents/doc1991/char=159,160>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №13 предложения №3 документа №1991 “,”"@ru,
+    "Word #13 of the sentence #3 of the document #1991 “,”"@en;
+  conll:ID "883544";
+  opencorpora:wordNumber "13"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1991/char=0,280>;
+  nif:anchorOf ",";
+  nif:beginIndex "159"^^xsd:int;
+  nif:endIndex "160"^^xsd:int;
+  nif:lemma ","@ru;
+  nif:posTag "PNCT";
+  conll:POS_URI opencorpora:PNCT;
+  nif:oliaLink 
+    opencorpora:PNCT;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1991/char=55,280>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1991/char=146,159>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1991/char=161,172>.
+
+<http://lod.opencorpora.org/documents/doc1991/char=161,172>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №14 предложения №3 документа №1991 “обладающими”"@ru,
+    "Word #14 of the sentence #3 of the document #1991 “обладающими”"@en;
+  conll:ID "883545";
+  opencorpora:wordNumber "14"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1991/char=0,280>;
+  nif:anchorOf "обладающими";
+  nif:beginIndex "161"^^xsd:int;
+  nif:endIndex "172"^^xsd:int;
+  nif:lemma "обладающий"@ru;
+  nif:posTag "PRTF";
+  conll:POS_URI opencorpora:PRTF;
+  nif:oliaLink 
+    opencorpora:PRTF,
+    opencorpora:impf,
+    opencorpora:intr,
+    opencorpora:pres,
+    opencorpora:actv,
+    opencorpora:plur,
+    opencorpora:ablt;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1991/char=55,280>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1991/char=159,160>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1991/char=173,181>.
+
+<http://lod.opencorpora.org/documents/doc1991/char=173,181>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №15 предложения №3 документа №1991 “согласно”"@ru,
+    "Word #15 of the sentence #3 of the document #1991 “согласно”"@en;
+  conll:ID "883546";
+  opencorpora:wordNumber "15"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1991/char=0,280>;
+  nif:anchorOf "согласно";
+  nif:beginIndex "173"^^xsd:int;
+  nif:endIndex "181"^^xsd:int;
+  nif:lemma "согласно"@ru;
+  nif:posTag "PREP";
+  conll:POS_URI opencorpora:PREP;
+  nif:oliaLink 
+    opencorpora:PREP;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1991/char=55,280>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1991/char=161,172>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1991/char=182,198>.
+
+<http://lod.opencorpora.org/documents/doc1991/char=182,198>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №16 предложения №3 документа №1991 “законодательству”"@ru,
+    "Word #16 of the sentence #3 of the document #1991 “законодательству”"@en;
+  conll:ID "883547";
+  opencorpora:wordNumber "16"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1991/char=0,280>;
+  nif:anchorOf "законодательству";
+  nif:beginIndex "182"^^xsd:int;
+  nif:endIndex "198"^^xsd:int;
+  nif:lemma "законодательство"@ru;
+  nif:posTag "NOUN";
+  conll:POS_URI opencorpora:NOUN;
+  nif:oliaLink 
+    opencorpora:NOUN,
+    opencorpora:inan,
+    opencorpora:neut,
+    opencorpora:sing,
+    opencorpora:datv;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1991/char=55,280>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1991/char=173,181>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1991/char=199,209>.
+
+<http://lod.opencorpora.org/documents/doc1991/char=199,209>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №17 предложения №3 документа №1991 “Российской”"@ru,
+    "Word #17 of the sentence #3 of the document #1991 “Российской”"@en;
+  conll:ID "883548";
+  opencorpora:wordNumber "17"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1991/char=0,280>;
+  nif:anchorOf "Российской";
+  nif:beginIndex "199"^^xsd:int;
+  nif:endIndex "209"^^xsd:int;
+  nif:lemma "российский"@ru;
+  nif:posTag "ADJF";
+  conll:POS_URI opencorpora:ADJF;
+  nif:oliaLink 
+    opencorpora:ADJF,
+    opencorpora:femn,
+    opencorpora:sing,
+    opencorpora:gent;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1991/char=55,280>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1991/char=182,198>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1991/char=210,219>.
+
+<http://lod.opencorpora.org/documents/doc1991/char=210,219>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №18 предложения №3 документа №1991 “Федерации”"@ru,
+    "Word #18 of the sentence #3 of the document #1991 “Федерации”"@en;
+  conll:ID "883549";
+  opencorpora:wordNumber "18"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1991/char=0,280>;
+  nif:anchorOf "Федерации";
+  nif:beginIndex "210"^^xsd:int;
+  nif:endIndex "219"^^xsd:int;
+  nif:lemma "федерация"@ru;
+  nif:posTag "NOUN";
+  conll:POS_URI opencorpora:NOUN;
+  nif:oliaLink 
+    opencorpora:NOUN,
+    opencorpora:inan,
+    opencorpora:femn,
+    opencorpora:sing,
+    opencorpora:gent;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1991/char=55,280>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1991/char=199,209>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1991/char=220,226>.
+
+<http://lod.opencorpora.org/documents/doc1991/char=220,226>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №19 предложения №3 документа №1991 “правом”"@ru,
+    "Word #19 of the sentence #3 of the document #1991 “правом”"@en;
+  conll:ID "883550";
+  opencorpora:wordNumber "19"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1991/char=0,280>;
+  nif:anchorOf "правом";
+  nif:beginIndex "220"^^xsd:int;
+  nif:endIndex "226"^^xsd:int;
+  nif:lemma "право"@ru;
+  nif:posTag "NOUN";
+  conll:POS_URI opencorpora:NOUN;
+  nif:oliaLink 
+    opencorpora:NOUN,
+    opencorpora:inan,
+    opencorpora:neut,
+    opencorpora:sing,
+    opencorpora:ablt;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1991/char=55,280>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1991/char=210,219>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1991/char=227,229>.
+
+<http://lod.opencorpora.org/documents/doc1991/char=227,229>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №20 предложения №3 документа №1991 “на”"@ru,
+    "Word #20 of the sentence #3 of the document #1991 “на”"@en;
+  conll:ID "883551";
+  opencorpora:wordNumber "20"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1991/char=0,280>;
+  nif:anchorOf "на";
+  nif:beginIndex "227"^^xsd:int;
+  nif:endIndex "229"^^xsd:int;
+  nif:lemma "на"@ru;
+  nif:posTag "PREP";
+  conll:POS_URI opencorpora:PREP;
+  nif:oliaLink 
+    opencorpora:PREP;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1991/char=55,280>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1991/char=220,226>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1991/char=230,238>.
+
+<http://lod.opencorpora.org/documents/doc1991/char=230,238>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №21 предложения №3 документа №1991 “судебную”"@ru,
+    "Word #21 of the sentence #3 of the document #1991 “судебную”"@en;
+  conll:ID "883552";
+  opencorpora:wordNumber "21"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1991/char=0,280>;
+  nif:anchorOf "судебную";
+  nif:beginIndex "230"^^xsd:int;
+  nif:endIndex "238"^^xsd:int;
+  nif:lemma "судебный"@ru;
+  nif:posTag "ADJF";
+  conll:POS_URI opencorpora:ADJF;
+  nif:oliaLink 
+    opencorpora:ADJF,
+    opencorpora:Qual,
+    opencorpora:femn,
+    opencorpora:sing,
+    opencorpora:accs;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1991/char=55,280>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1991/char=227,229>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1991/char=239,245>.
+
+<http://lod.opencorpora.org/documents/doc1991/char=239,245>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №22 предложения №3 документа №1991 “защиту”"@ru,
+    "Word #22 of the sentence #3 of the document #1991 “защиту”"@en;
+  conll:ID "883553";
+  opencorpora:wordNumber "22"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1991/char=0,280>;
+  nif:anchorOf "защиту";
+  nif:beginIndex "239"^^xsd:int;
+  nif:endIndex "245"^^xsd:int;
+  nif:lemma "защита"@ru;
+  nif:posTag "NOUN";
+  conll:POS_URI opencorpora:NOUN;
+  nif:oliaLink 
+    opencorpora:NOUN,
+    opencorpora:inan,
+    opencorpora:femn,
+    opencorpora:sing,
+    opencorpora:accs;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1991/char=55,280>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1991/char=230,238>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1991/char=246,250>.
+
+<http://lod.opencorpora.org/documents/doc1991/char=246,250>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №23 предложения №3 документа №1991 “прав”"@ru,
+    "Word #23 of the sentence #3 of the document #1991 “прав”"@en;
+  conll:ID "883554";
+  opencorpora:wordNumber "23"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1991/char=0,280>;
+  nif:anchorOf "прав";
+  nif:beginIndex "246"^^xsd:int;
+  nif:endIndex "250"^^xsd:int;
+  nif:lemma "право"@ru;
+  nif:posTag "NOUN";
+  conll:POS_URI opencorpora:NOUN;
+  nif:oliaLink 
+    opencorpora:NOUN,
+    opencorpora:inan,
+    opencorpora:neut,
+    opencorpora:plur,
+    opencorpora:gent;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1991/char=55,280>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1991/char=239,245>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1991/char=250,251>.
+
+<http://lod.opencorpora.org/documents/doc1991/char=250,251>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №24 предложения №3 документа №1991 “,”"@ru,
+    "Word #24 of the sentence #3 of the document #1991 “,”"@en;
+  conll:ID "883555";
+  opencorpora:wordNumber "24"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1991/char=0,280>;
+  nif:anchorOf ",";
+  nif:beginIndex "250"^^xsd:int;
+  nif:endIndex "251"^^xsd:int;
+  nif:lemma ","@ru;
+  nif:posTag "PNCT";
+  conll:POS_URI opencorpora:PNCT;
+  nif:oliaLink 
+    opencorpora:PNCT;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1991/char=55,280>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1991/char=246,250>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1991/char=252,258>.
+
+<http://lod.opencorpora.org/documents/doc1991/char=252,258>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №25 предложения №3 документа №1991 “свобод”"@ru,
+    "Word #25 of the sentence #3 of the document #1991 “свобод”"@en;
+  conll:ID "883556";
+  opencorpora:wordNumber "25"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1991/char=0,280>;
+  nif:anchorOf "свобод";
+  nif:beginIndex "252"^^xsd:int;
+  nif:endIndex "258"^^xsd:int;
+  nif:lemma "свобода"@ru;
+  nif:posTag "NOUN";
+  conll:POS_URI opencorpora:NOUN;
+  nif:oliaLink 
+    opencorpora:NOUN,
+    opencorpora:inan,
+    opencorpora:femn,
+    opencorpora:plur,
+    opencorpora:gent;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1991/char=55,280>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1991/char=250,251>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1991/char=259,260>.
+
+<http://lod.opencorpora.org/documents/doc1991/char=259,260>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №26 предложения №3 документа №1991 “и”"@ru,
+    "Word #26 of the sentence #3 of the document #1991 “и”"@en;
+  conll:ID "883557";
+  opencorpora:wordNumber "26"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1991/char=0,280>;
+  nif:anchorOf "и";
+  nif:beginIndex "259"^^xsd:int;
+  nif:endIndex "260"^^xsd:int;
+  nif:lemma "и"@ru;
+  nif:posTag "CONJ";
+  conll:POS_URI opencorpora:CONJ;
+  nif:oliaLink 
+    opencorpora:CONJ;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1991/char=55,280>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1991/char=252,258>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1991/char=261,269>.
+
+<http://lod.opencorpora.org/documents/doc1991/char=261,269>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №27 предложения №3 документа №1991 “законных”"@ru,
+    "Word #27 of the sentence #3 of the document #1991 “законных”"@en;
+  conll:ID "883558";
+  opencorpora:wordNumber "27"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1991/char=0,280>;
+  nif:anchorOf "законных";
+  nif:beginIndex "261"^^xsd:int;
+  nif:endIndex "269"^^xsd:int;
+  nif:lemma "законный"@ru;
+  nif:posTag "ADJF";
+  conll:POS_URI opencorpora:ADJF;
+  nif:oliaLink 
+    opencorpora:ADJF,
+    opencorpora:Qual,
+    opencorpora:plur,
+    opencorpora:gent;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1991/char=55,280>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1991/char=259,260>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1991/char=270,279>.
+
+<http://lod.opencorpora.org/documents/doc1991/char=270,279>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №28 предложения №3 документа №1991 “интересов”"@ru,
+    "Word #28 of the sentence #3 of the document #1991 “интересов”"@en;
+  conll:ID "883559";
+  opencorpora:wordNumber "28"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1991/char=0,280>;
+  nif:anchorOf "интересов";
+  nif:beginIndex "270"^^xsd:int;
+  nif:endIndex "279"^^xsd:int;
+  nif:lemma "интерес"@ru;
+  nif:posTag "NOUN";
+  conll:POS_URI opencorpora:NOUN;
+  nif:oliaLink 
+    opencorpora:NOUN,
+    opencorpora:inan,
+    opencorpora:masc,
+    opencorpora:plur,
+    opencorpora:gent;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1991/char=55,280>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1991/char=261,269>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1991/char=279,280>.
+
+<http://lod.opencorpora.org/documents/doc1991/char=279,280>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №29 предложения №3 документа №1991 “.”"@ru,
+    "Word #29 of the sentence #3 of the document #1991 “.”"@en;
+  conll:ID "883560";
+  opencorpora:wordNumber "29"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1991/char=0,280>;
+  nif:anchorOf ".";
+  nif:beginIndex "279"^^xsd:int;
+  nif:endIndex "280"^^xsd:int;
+  nif:lemma "."@ru;
+  nif:posTag "PNCT";
+  conll:POS_URI opencorpora:PNCT;
+  nif:oliaLink 
+    opencorpora:PNCT;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1991/char=55,280>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1991/char=270,279>.
+
+

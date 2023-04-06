@@ -1,0 +1,1243 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix schema: <http://schema.org/>.
+@prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#>.
+@prefix conll: <http://purl.org/acoli/conll#>.
+@prefix opencorpora: <http://lod.opencorpora.org/ontology#>.
+
+<http://lod.opencorpora.org/documents/doc869>
+  a foaf:Document;
+  dcterms:title "0030618 За окном";
+  dcterms:created "2011-03-30"^^xsd:date;
+  owl:sameAs <http://okhrim.livejournal.com/30618.html>.
+
+<http://lod.opencorpora.org/documents/doc869/char=0,275>
+  a nif:String, nif:Context, nif:OffsetBasedString;
+  rdfs:label 
+    "Текст документа №869 “0030618 За окном”"@ru,
+    "Text of the document#869 “0030618 За окном”"@en;
+  conll:DOCUMENT_ID "869";
+  nif:isString """За окном
+поработали дворосеки:
+вооружённые бензопилой парни покромсали на короткие бревнышки дерево:
+Отмечу: я живу на пятом этаже, ветви доросли до уровня окна:
+планировал даже самостоятельно отпиливать - ну а теперь осталось только сказать спасибо службе озеленения города.""";
+  nif:beginIndex "0"^^xsd:int;
+  nif:endIndex "275"^^xsd:int;
+  opencorpora:belongsToCollection 
+    <http://lod.opencorpora.org/opencorpora>;
+  nif:sourceUrl 
+    <http://lod.opencorpora.org/documents/doc869>.
+
+<http://lod.opencorpora.org/documents/doc869/char=0,8>
+  a nif:String, nif:Sentence, nif:OffsetBasedString, opencorpora:FullyMorphologicallyDisambiguated;
+  rdfs:label 
+    "Предложение №1 документа №869 “За окном”"@ru,
+    "Sentence #1 of the document #869 “За окном”"@en;
+  conll:SENTENCE_ID "27798";
+  opencorpora:sentenceNumber "1"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc869/char=0,275>;
+  nif:anchorOf """За окном""";
+  nif:beginIndex "0"^^xsd:int;
+  nif:endIndex "8"^^xsd:int;
+  nif:nextSentence 
+    <http://lod.opencorpora.org/documents/doc869/char=9,30>;
+  nif:firstWord 
+    <http://lod.opencorpora.org/documents/doc869/char=0,2>;
+  nif:word 
+    <http://lod.opencorpora.org/documents/doc869/char=0,2>,
+    <http://lod.opencorpora.org/documents/doc869/char=3,8>.
+
+<http://lod.opencorpora.org/documents/doc869/char=0,2>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №1 предложения №1 документа №869 “За”"@ru,
+    "Word #1 of the sentence #1 of the document #869 “За”"@en;
+  conll:ID "502074";
+  opencorpora:wordNumber "1"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc869/char=0,275>;
+  nif:anchorOf "За";
+  nif:beginIndex "0"^^xsd:int;
+  nif:endIndex "2"^^xsd:int;
+  nif:lemma "за"@ru;
+  nif:posTag "PREP";
+  conll:POS_URI opencorpora:PREP;
+  nif:oliaLink 
+    opencorpora:PREP;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc869/char=0,8>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc869/char=3,8>.
+
+<http://lod.opencorpora.org/documents/doc869/char=3,8>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №2 предложения №1 документа №869 “окном”"@ru,
+    "Word #2 of the sentence #1 of the document #869 “окном”"@en;
+  conll:ID "502075";
+  opencorpora:wordNumber "2"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc869/char=0,275>;
+  nif:anchorOf "окном";
+  nif:beginIndex "3"^^xsd:int;
+  nif:endIndex "8"^^xsd:int;
+  nif:lemma "окно"@ru;
+  nif:posTag "NOUN";
+  conll:POS_URI opencorpora:NOUN;
+  nif:oliaLink 
+    opencorpora:NOUN,
+    opencorpora:inan,
+    opencorpora:neut,
+    opencorpora:sing,
+    opencorpora:ablt;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc869/char=0,8>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc869/char=0,2>.
+
+<http://lod.opencorpora.org/documents/doc869/char=9,30>
+  a nif:String, nif:Sentence, nif:OffsetBasedString, opencorpora:FullyMorphologicallyDisambiguated;
+  rdfs:label 
+    "Предложение №2 документа №869 “поработали дворосеки:”"@ru,
+    "Sentence #2 of the document #869 “поработали дворосеки:”"@en;
+  conll:SENTENCE_ID "27799";
+  opencorpora:sentenceNumber "2"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc869/char=0,275>;
+  nif:anchorOf """поработали дворосеки:""";
+  nif:beginIndex "9"^^xsd:int;
+  nif:endIndex "30"^^xsd:int;
+  nif:previousSentence 
+    <http://lod.opencorpora.org/documents/doc869/char=0,8>;
+  nif:nextSentence 
+    <http://lod.opencorpora.org/documents/doc869/char=31,100>;
+  nif:firstWord 
+    <http://lod.opencorpora.org/documents/doc869/char=9,19>;
+  nif:word 
+    <http://lod.opencorpora.org/documents/doc869/char=9,19>,
+    <http://lod.opencorpora.org/documents/doc869/char=20,29>,
+    <http://lod.opencorpora.org/documents/doc869/char=29,30>.
+
+<http://lod.opencorpora.org/documents/doc869/char=9,19>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №1 предложения №2 документа №869 “поработали”"@ru,
+    "Word #1 of the sentence #2 of the document #869 “поработали”"@en;
+  conll:ID "502076";
+  opencorpora:wordNumber "1"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc869/char=0,275>;
+  nif:anchorOf "поработали";
+  nif:beginIndex "9"^^xsd:int;
+  nif:endIndex "19"^^xsd:int;
+  nif:lemma "поработал"@ru;
+  nif:posTag "VERB";
+  conll:POS_URI opencorpora:VERB;
+  nif:oliaLink 
+    opencorpora:VERB,
+    opencorpora:perf,
+    opencorpora:intr,
+    opencorpora:plur,
+    opencorpora:past,
+    opencorpora:indc;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc869/char=9,30>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc869/char=20,29>.
+
+<http://lod.opencorpora.org/documents/doc869/char=20,29>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №2 предложения №2 документа №869 “дворосеки”"@ru,
+    "Word #2 of the sentence #2 of the document #869 “дворосеки”"@en;
+  conll:ID "502077";
+  opencorpora:wordNumber "2"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc869/char=0,275>;
+  nif:anchorOf "дворосеки";
+  nif:beginIndex "20"^^xsd:int;
+  nif:endIndex "29"^^xsd:int;
+  nif:lemma "дворосеки"@ru;
+  nif:posTag "UNKN";
+  conll:POS_URI opencorpora:UNKN;
+  nif:oliaLink 
+    opencorpora:UNKN;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc869/char=9,30>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc869/char=9,19>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc869/char=29,30>.
+
+<http://lod.opencorpora.org/documents/doc869/char=29,30>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №3 предложения №2 документа №869 “:”"@ru,
+    "Word #3 of the sentence #2 of the document #869 “:”"@en;
+  conll:ID "502078";
+  opencorpora:wordNumber "3"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc869/char=0,275>;
+  nif:anchorOf ":";
+  nif:beginIndex "29"^^xsd:int;
+  nif:endIndex "30"^^xsd:int;
+  nif:lemma ":"@ru;
+  nif:posTag "PNCT";
+  conll:POS_URI opencorpora:PNCT;
+  nif:oliaLink 
+    opencorpora:PNCT;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc869/char=9,30>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc869/char=20,29>.
+
+<http://lod.opencorpora.org/documents/doc869/char=31,100>
+  a nif:String, nif:Sentence, nif:OffsetBasedString;
+  rdfs:label 
+    "Предложение №3 документа №869 “вооружённые бензопилой парни покромсали на короткие бревнышки дерево:”"@ru,
+    "Sentence #3 of the document #869 “вооружённые бензопилой парни покромсали на короткие бревнышки дерево:”"@en;
+  conll:SENTENCE_ID "27800";
+  opencorpora:sentenceNumber "3"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc869/char=0,275>;
+  nif:anchorOf """вооружённые бензопилой парни покромсали на короткие бревнышки дерево:""";
+  nif:beginIndex "31"^^xsd:int;
+  nif:endIndex "100"^^xsd:int;
+  nif:previousSentence 
+    <http://lod.opencorpora.org/documents/doc869/char=9,30>;
+  nif:nextSentence 
+    <http://lod.opencorpora.org/documents/doc869/char=101,161>;
+  nif:firstWord 
+    <http://lod.opencorpora.org/documents/doc869/char=31,42>;
+  nif:word 
+    <http://lod.opencorpora.org/documents/doc869/char=31,42>,
+    <http://lod.opencorpora.org/documents/doc869/char=43,53>,
+    <http://lod.opencorpora.org/documents/doc869/char=54,59>,
+    <http://lod.opencorpora.org/documents/doc869/char=60,70>,
+    <http://lod.opencorpora.org/documents/doc869/char=71,73>,
+    <http://lod.opencorpora.org/documents/doc869/char=74,82>,
+    <http://lod.opencorpora.org/documents/doc869/char=83,92>,
+    <http://lod.opencorpora.org/documents/doc869/char=93,99>,
+    <http://lod.opencorpora.org/documents/doc869/char=99,100>.
+
+<http://lod.opencorpora.org/documents/doc869/char=31,42>
+  a nif:String, nif:Word, nif:OffsetBasedString;
+  rdfs:label 
+    "Слово №1 предложения №3 документа №869 “вооружённые”"@ru,
+    "Word #1 of the sentence #3 of the document #869 “вооружённые”"@en;
+  conll:ID "502079";
+  opencorpora:wordNumber "1"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc869/char=0,275>;
+  nif:anchorOf "вооружённые";
+  nif:beginIndex "31"^^xsd:int;
+  nif:endIndex "42"^^xsd:int;
+  nif:lemma "вооружённый"@ru;
+  nif:oliaLink 
+    opencorpora:plur;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc869/char=31,100>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc869/char=43,53>.
+
+<http://lod.opencorpora.org/documents/doc869/char=43,53>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №2 предложения №3 документа №869 “бензопилой”"@ru,
+    "Word #2 of the sentence #3 of the document #869 “бензопилой”"@en;
+  conll:ID "502080";
+  opencorpora:wordNumber "2"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc869/char=0,275>;
+  nif:anchorOf "бензопилой";
+  nif:beginIndex "43"^^xsd:int;
+  nif:endIndex "53"^^xsd:int;
+  nif:lemma "бензопила"@ru;
+  nif:posTag "NOUN";
+  conll:POS_URI opencorpora:NOUN;
+  nif:oliaLink 
+    opencorpora:NOUN,
+    opencorpora:inan,
+    opencorpora:femn,
+    opencorpora:sing,
+    opencorpora:ablt;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc869/char=31,100>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc869/char=31,42>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc869/char=54,59>.
+
+<http://lod.opencorpora.org/documents/doc869/char=54,59>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №3 предложения №3 документа №869 “парни”"@ru,
+    "Word #3 of the sentence #3 of the document #869 “парни”"@en;
+  conll:ID "502081";
+  opencorpora:wordNumber "3"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc869/char=0,275>;
+  nif:anchorOf "парни";
+  nif:beginIndex "54"^^xsd:int;
+  nif:endIndex "59"^^xsd:int;
+  nif:lemma "парень"@ru;
+  nif:posTag "NOUN";
+  conll:POS_URI opencorpora:NOUN;
+  nif:oliaLink 
+    opencorpora:NOUN,
+    opencorpora:anim,
+    opencorpora:masc,
+    opencorpora:plur,
+    opencorpora:nomn;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc869/char=31,100>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc869/char=43,53>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc869/char=60,70>.
+
+<http://lod.opencorpora.org/documents/doc869/char=60,70>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №4 предложения №3 документа №869 “покромсали”"@ru,
+    "Word #4 of the sentence #3 of the document #869 “покромсали”"@en;
+  conll:ID "502082";
+  opencorpora:wordNumber "4"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc869/char=0,275>;
+  nif:anchorOf "покромсали";
+  nif:beginIndex "60"^^xsd:int;
+  nif:endIndex "70"^^xsd:int;
+  nif:lemma "покромсал"@ru;
+  nif:posTag "VERB";
+  conll:POS_URI opencorpora:VERB;
+  nif:oliaLink 
+    opencorpora:VERB,
+    opencorpora:perf,
+    opencorpora:tran,
+    opencorpora:plur,
+    opencorpora:past,
+    opencorpora:indc;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc869/char=31,100>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc869/char=54,59>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc869/char=71,73>.
+
+<http://lod.opencorpora.org/documents/doc869/char=71,73>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №5 предложения №3 документа №869 “на”"@ru,
+    "Word #5 of the sentence #3 of the document #869 “на”"@en;
+  conll:ID "502083";
+  opencorpora:wordNumber "5"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc869/char=0,275>;
+  nif:anchorOf "на";
+  nif:beginIndex "71"^^xsd:int;
+  nif:endIndex "73"^^xsd:int;
+  nif:lemma "на"@ru;
+  nif:posTag "PREP";
+  conll:POS_URI opencorpora:PREP;
+  nif:oliaLink 
+    opencorpora:PREP;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc869/char=31,100>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc869/char=60,70>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc869/char=74,82>.
+
+<http://lod.opencorpora.org/documents/doc869/char=74,82>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №6 предложения №3 документа №869 “короткие”"@ru,
+    "Word #6 of the sentence #3 of the document #869 “короткие”"@en;
+  conll:ID "502084";
+  opencorpora:wordNumber "6"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc869/char=0,275>;
+  nif:anchorOf "короткие";
+  nif:beginIndex "74"^^xsd:int;
+  nif:endIndex "82"^^xsd:int;
+  nif:lemma "короткий"@ru;
+  nif:posTag "ADJF";
+  conll:POS_URI opencorpora:ADJF;
+  nif:oliaLink 
+    opencorpora:ADJF,
+    opencorpora:Qual,
+    opencorpora:inan,
+    opencorpora:plur,
+    opencorpora:accs;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc869/char=31,100>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc869/char=71,73>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc869/char=83,92>.
+
+<http://lod.opencorpora.org/documents/doc869/char=83,92>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №7 предложения №3 документа №869 “бревнышки”"@ru,
+    "Word #7 of the sentence #3 of the document #869 “бревнышки”"@en;
+  conll:ID "502085";
+  opencorpora:wordNumber "7"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc869/char=0,275>;
+  nif:anchorOf "бревнышки";
+  nif:beginIndex "83"^^xsd:int;
+  nif:endIndex "92"^^xsd:int;
+  nif:lemma "брёвнышко"@ru;
+  nif:posTag "NOUN";
+  conll:POS_URI opencorpora:NOUN;
+  nif:oliaLink 
+    opencorpora:NOUN,
+    opencorpora:inan,
+    opencorpora:neut,
+    opencorpora:plur,
+    opencorpora:accs;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc869/char=31,100>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc869/char=74,82>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc869/char=93,99>.
+
+<http://lod.opencorpora.org/documents/doc869/char=93,99>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №8 предложения №3 документа №869 “дерево”"@ru,
+    "Word #8 of the sentence #3 of the document #869 “дерево”"@en;
+  conll:ID "502086";
+  opencorpora:wordNumber "8"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc869/char=0,275>;
+  nif:anchorOf "дерево";
+  nif:beginIndex "93"^^xsd:int;
+  nif:endIndex "99"^^xsd:int;
+  nif:lemma "дерево"@ru;
+  nif:posTag "NOUN";
+  conll:POS_URI opencorpora:NOUN;
+  nif:oliaLink 
+    opencorpora:NOUN,
+    opencorpora:inan,
+    opencorpora:neut,
+    opencorpora:sing,
+    opencorpora:accs;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc869/char=31,100>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc869/char=83,92>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc869/char=99,100>.
+
+<http://lod.opencorpora.org/documents/doc869/char=99,100>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №9 предложения №3 документа №869 “:”"@ru,
+    "Word #9 of the sentence #3 of the document #869 “:”"@en;
+  conll:ID "502087";
+  opencorpora:wordNumber "9"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc869/char=0,275>;
+  nif:anchorOf ":";
+  nif:beginIndex "99"^^xsd:int;
+  nif:endIndex "100"^^xsd:int;
+  nif:lemma ":"@ru;
+  nif:posTag "PNCT";
+  conll:POS_URI opencorpora:PNCT;
+  nif:oliaLink 
+    opencorpora:PNCT;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc869/char=31,100>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc869/char=93,99>.
+
+<http://lod.opencorpora.org/documents/doc869/char=101,161>
+  a nif:String, nif:Sentence, nif:OffsetBasedString;
+  rdfs:label 
+    "Предложение №4 документа №869 “Отмечу: я живу на пятом этаже, ветви доросли до уровня окна:”"@ru,
+    "Sentence #4 of the document #869 “Отмечу: я живу на пятом этаже, ветви доросли до уровня окна:”"@en;
+  conll:SENTENCE_ID "27801";
+  opencorpora:sentenceNumber "4"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc869/char=0,275>;
+  nif:anchorOf """Отмечу: я живу на пятом этаже, ветви доросли до уровня окна:""";
+  nif:beginIndex "101"^^xsd:int;
+  nif:endIndex "161"^^xsd:int;
+  nif:previousSentence 
+    <http://lod.opencorpora.org/documents/doc869/char=31,100>;
+  nif:nextSentence 
+    <http://lod.opencorpora.org/documents/doc869/char=162,275>;
+  nif:firstWord 
+    <http://lod.opencorpora.org/documents/doc869/char=101,107>;
+  nif:word 
+    <http://lod.opencorpora.org/documents/doc869/char=101,107>,
+    <http://lod.opencorpora.org/documents/doc869/char=107,108>,
+    <http://lod.opencorpora.org/documents/doc869/char=109,110>,
+    <http://lod.opencorpora.org/documents/doc869/char=111,115>,
+    <http://lod.opencorpora.org/documents/doc869/char=116,118>,
+    <http://lod.opencorpora.org/documents/doc869/char=119,124>,
+    <http://lod.opencorpora.org/documents/doc869/char=125,130>,
+    <http://lod.opencorpora.org/documents/doc869/char=130,131>,
+    <http://lod.opencorpora.org/documents/doc869/char=132,137>,
+    <http://lod.opencorpora.org/documents/doc869/char=138,145>,
+    <http://lod.opencorpora.org/documents/doc869/char=146,148>,
+    <http://lod.opencorpora.org/documents/doc869/char=149,155>,
+    <http://lod.opencorpora.org/documents/doc869/char=156,160>,
+    <http://lod.opencorpora.org/documents/doc869/char=160,161>.
+
+<http://lod.opencorpora.org/documents/doc869/char=101,107>
+  a nif:String, nif:Word, nif:OffsetBasedString;
+  rdfs:label 
+    "Слово №1 предложения №4 документа №869 “Отмечу”"@ru,
+    "Word #1 of the sentence #4 of the document #869 “Отмечу”"@en;
+  conll:ID "502088";
+  opencorpora:wordNumber "1"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc869/char=0,275>;
+  nif:anchorOf "Отмечу";
+  nif:beginIndex "101"^^xsd:int;
+  nif:endIndex "107"^^xsd:int;
+  nif:posTag "VERB";
+  conll:POS_URI opencorpora:VERB;
+  nif:oliaLink 
+    opencorpora:VERB,
+    opencorpora:perf,
+    opencorpora:tran,
+    opencorpora:sing,
+    opencorpora:1per,
+    opencorpora:futr,
+    opencorpora:indc;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc869/char=101,161>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc869/char=107,108>.
+
+<http://lod.opencorpora.org/documents/doc869/char=107,108>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №2 предложения №4 документа №869 “:”"@ru,
+    "Word #2 of the sentence #4 of the document #869 “:”"@en;
+  conll:ID "502089";
+  opencorpora:wordNumber "2"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc869/char=0,275>;
+  nif:anchorOf ":";
+  nif:beginIndex "107"^^xsd:int;
+  nif:endIndex "108"^^xsd:int;
+  nif:lemma ":"@ru;
+  nif:posTag "PNCT";
+  conll:POS_URI opencorpora:PNCT;
+  nif:oliaLink 
+    opencorpora:PNCT;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc869/char=101,161>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc869/char=101,107>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc869/char=109,110>.
+
+<http://lod.opencorpora.org/documents/doc869/char=109,110>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №3 предложения №4 документа №869 “я”"@ru,
+    "Word #3 of the sentence #4 of the document #869 “я”"@en;
+  conll:ID "502090";
+  opencorpora:wordNumber "3"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc869/char=0,275>;
+  nif:anchorOf "я";
+  nif:beginIndex "109"^^xsd:int;
+  nif:endIndex "110"^^xsd:int;
+  nif:lemma "я"@ru;
+  nif:posTag "NPRO";
+  conll:POS_URI opencorpora:NPRO;
+  nif:oliaLink 
+    opencorpora:NPRO,
+    opencorpora:1per,
+    opencorpora:sing,
+    opencorpora:nomn;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc869/char=101,161>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc869/char=107,108>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc869/char=111,115>.
+
+<http://lod.opencorpora.org/documents/doc869/char=111,115>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №4 предложения №4 документа №869 “живу”"@ru,
+    "Word #4 of the sentence #4 of the document #869 “живу”"@en;
+  conll:ID "502091";
+  opencorpora:wordNumber "4"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc869/char=0,275>;
+  nif:anchorOf "живу";
+  nif:beginIndex "111"^^xsd:int;
+  nif:endIndex "115"^^xsd:int;
+  nif:lemma "живу"@ru;
+  nif:posTag "VERB";
+  conll:POS_URI opencorpora:VERB;
+  nif:oliaLink 
+    opencorpora:VERB,
+    opencorpora:impf,
+    opencorpora:intr,
+    opencorpora:sing,
+    opencorpora:1per,
+    opencorpora:pres,
+    opencorpora:indc;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc869/char=101,161>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc869/char=109,110>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc869/char=116,118>.
+
+<http://lod.opencorpora.org/documents/doc869/char=116,118>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №5 предложения №4 документа №869 “на”"@ru,
+    "Word #5 of the sentence #4 of the document #869 “на”"@en;
+  conll:ID "502092";
+  opencorpora:wordNumber "5"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc869/char=0,275>;
+  nif:anchorOf "на";
+  nif:beginIndex "116"^^xsd:int;
+  nif:endIndex "118"^^xsd:int;
+  nif:lemma "на"@ru;
+  nif:posTag "PREP";
+  conll:POS_URI opencorpora:PREP;
+  nif:oliaLink 
+    opencorpora:PREP;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc869/char=101,161>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc869/char=111,115>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc869/char=119,124>.
+
+<http://lod.opencorpora.org/documents/doc869/char=119,124>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №6 предложения №4 документа №869 “пятом”"@ru,
+    "Word #6 of the sentence #4 of the document #869 “пятом”"@en;
+  conll:ID "502093";
+  opencorpora:wordNumber "6"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc869/char=0,275>;
+  nif:anchorOf "пятом";
+  nif:beginIndex "119"^^xsd:int;
+  nif:endIndex "124"^^xsd:int;
+  nif:lemma "пятый"@ru;
+  nif:posTag "ADJF";
+  conll:POS_URI opencorpora:ADJF;
+  nif:oliaLink 
+    opencorpora:ADJF,
+    opencorpora:Anum,
+    opencorpora:masc,
+    opencorpora:sing,
+    opencorpora:loct;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc869/char=101,161>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc869/char=116,118>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc869/char=125,130>.
+
+<http://lod.opencorpora.org/documents/doc869/char=125,130>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №7 предложения №4 документа №869 “этаже”"@ru,
+    "Word #7 of the sentence #4 of the document #869 “этаже”"@en;
+  conll:ID "502094";
+  opencorpora:wordNumber "7"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc869/char=0,275>;
+  nif:anchorOf "этаже";
+  nif:beginIndex "125"^^xsd:int;
+  nif:endIndex "130"^^xsd:int;
+  nif:lemma "этаж"@ru;
+  nif:posTag "NOUN";
+  conll:POS_URI opencorpora:NOUN;
+  nif:oliaLink 
+    opencorpora:NOUN,
+    opencorpora:inan,
+    opencorpora:masc,
+    opencorpora:sing,
+    opencorpora:loct;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc869/char=101,161>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc869/char=119,124>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc869/char=130,131>.
+
+<http://lod.opencorpora.org/documents/doc869/char=130,131>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №8 предложения №4 документа №869 “,”"@ru,
+    "Word #8 of the sentence #4 of the document #869 “,”"@en;
+  conll:ID "502095";
+  opencorpora:wordNumber "8"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc869/char=0,275>;
+  nif:anchorOf ",";
+  nif:beginIndex "130"^^xsd:int;
+  nif:endIndex "131"^^xsd:int;
+  nif:lemma ","@ru;
+  nif:posTag "PNCT";
+  conll:POS_URI opencorpora:PNCT;
+  nif:oliaLink 
+    opencorpora:PNCT;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc869/char=101,161>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc869/char=125,130>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc869/char=132,137>.
+
+<http://lod.opencorpora.org/documents/doc869/char=132,137>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №9 предложения №4 документа №869 “ветви”"@ru,
+    "Word #9 of the sentence #4 of the document #869 “ветви”"@en;
+  conll:ID "502096";
+  opencorpora:wordNumber "9"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc869/char=0,275>;
+  nif:anchorOf "ветви";
+  nif:beginIndex "132"^^xsd:int;
+  nif:endIndex "137"^^xsd:int;
+  nif:lemma "ветвь"@ru;
+  nif:posTag "NOUN";
+  conll:POS_URI opencorpora:NOUN;
+  nif:oliaLink 
+    opencorpora:NOUN,
+    opencorpora:inan,
+    opencorpora:femn,
+    opencorpora:plur,
+    opencorpora:nomn;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc869/char=101,161>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc869/char=130,131>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc869/char=138,145>.
+
+<http://lod.opencorpora.org/documents/doc869/char=138,145>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №10 предложения №4 документа №869 “доросли”"@ru,
+    "Word #10 of the sentence #4 of the document #869 “доросли”"@en;
+  conll:ID "502097";
+  opencorpora:wordNumber "10"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc869/char=0,275>;
+  nif:anchorOf "доросли";
+  nif:beginIndex "138"^^xsd:int;
+  nif:endIndex "145"^^xsd:int;
+  nif:lemma "дорос"@ru;
+  nif:posTag "VERB";
+  conll:POS_URI opencorpora:VERB;
+  nif:oliaLink 
+    opencorpora:VERB,
+    opencorpora:perf,
+    opencorpora:intr,
+    opencorpora:plur,
+    opencorpora:past,
+    opencorpora:indc;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc869/char=101,161>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc869/char=132,137>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc869/char=146,148>.
+
+<http://lod.opencorpora.org/documents/doc869/char=146,148>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №11 предложения №4 документа №869 “до”"@ru,
+    "Word #11 of the sentence #4 of the document #869 “до”"@en;
+  conll:ID "502098";
+  opencorpora:wordNumber "11"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc869/char=0,275>;
+  nif:anchorOf "до";
+  nif:beginIndex "146"^^xsd:int;
+  nif:endIndex "148"^^xsd:int;
+  nif:lemma "до"@ru;
+  nif:posTag "PREP";
+  conll:POS_URI opencorpora:PREP;
+  nif:oliaLink 
+    opencorpora:PREP;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc869/char=101,161>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc869/char=138,145>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc869/char=149,155>.
+
+<http://lod.opencorpora.org/documents/doc869/char=149,155>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №12 предложения №4 документа №869 “уровня”"@ru,
+    "Word #12 of the sentence #4 of the document #869 “уровня”"@en;
+  conll:ID "502099";
+  opencorpora:wordNumber "12"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc869/char=0,275>;
+  nif:anchorOf "уровня";
+  nif:beginIndex "149"^^xsd:int;
+  nif:endIndex "155"^^xsd:int;
+  nif:lemma "уровень"@ru;
+  nif:posTag "NOUN";
+  conll:POS_URI opencorpora:NOUN;
+  nif:oliaLink 
+    opencorpora:NOUN,
+    opencorpora:inan,
+    opencorpora:masc,
+    opencorpora:sing,
+    opencorpora:gent;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc869/char=101,161>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc869/char=146,148>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc869/char=156,160>.
+
+<http://lod.opencorpora.org/documents/doc869/char=156,160>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №13 предложения №4 документа №869 “окна”"@ru,
+    "Word #13 of the sentence #4 of the document #869 “окна”"@en;
+  conll:ID "502100";
+  opencorpora:wordNumber "13"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc869/char=0,275>;
+  nif:anchorOf "окна";
+  nif:beginIndex "156"^^xsd:int;
+  nif:endIndex "160"^^xsd:int;
+  nif:lemma "окно"@ru;
+  nif:posTag "NOUN";
+  conll:POS_URI opencorpora:NOUN;
+  nif:oliaLink 
+    opencorpora:NOUN,
+    opencorpora:inan,
+    opencorpora:neut,
+    opencorpora:sing,
+    opencorpora:gent;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc869/char=101,161>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc869/char=149,155>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc869/char=160,161>.
+
+<http://lod.opencorpora.org/documents/doc869/char=160,161>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №14 предложения №4 документа №869 “:”"@ru,
+    "Word #14 of the sentence #4 of the document #869 “:”"@en;
+  conll:ID "502101";
+  opencorpora:wordNumber "14"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc869/char=0,275>;
+  nif:anchorOf ":";
+  nif:beginIndex "160"^^xsd:int;
+  nif:endIndex "161"^^xsd:int;
+  nif:lemma ":"@ru;
+  nif:posTag "PNCT";
+  conll:POS_URI opencorpora:PNCT;
+  nif:oliaLink 
+    opencorpora:PNCT;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc869/char=101,161>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc869/char=156,160>.
+
+<http://lod.opencorpora.org/documents/doc869/char=162,275>
+  a nif:String, nif:Sentence, nif:OffsetBasedString;
+  rdfs:label 
+    "Предложение №5 документа №869 “планировал даже самостоятельно отпиливать - ну а теперь осталось только сказать спасибо службе озеле...”"@ru,
+    "Sentence #5 of the document #869 “планировал даже самостоятельно отпиливать - ну а теперь осталось только сказать спасибо службе озеле...”"@en;
+  conll:SENTENCE_ID "27802";
+  opencorpora:sentenceNumber "5"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc869/char=0,275>;
+  nif:anchorOf """планировал даже самостоятельно отпиливать - ну а теперь осталось только сказать спасибо службе озеленения города.""";
+  nif:beginIndex "162"^^xsd:int;
+  nif:endIndex "275"^^xsd:int;
+  nif:previousSentence 
+    <http://lod.opencorpora.org/documents/doc869/char=101,161>;
+  nif:firstWord 
+    <http://lod.opencorpora.org/documents/doc869/char=162,172>;
+  nif:word 
+    <http://lod.opencorpora.org/documents/doc869/char=162,172>,
+    <http://lod.opencorpora.org/documents/doc869/char=173,177>,
+    <http://lod.opencorpora.org/documents/doc869/char=178,192>,
+    <http://lod.opencorpora.org/documents/doc869/char=193,203>,
+    <http://lod.opencorpora.org/documents/doc869/char=204,205>,
+    <http://lod.opencorpora.org/documents/doc869/char=206,208>,
+    <http://lod.opencorpora.org/documents/doc869/char=209,210>,
+    <http://lod.opencorpora.org/documents/doc869/char=211,217>,
+    <http://lod.opencorpora.org/documents/doc869/char=218,226>,
+    <http://lod.opencorpora.org/documents/doc869/char=227,233>,
+    <http://lod.opencorpora.org/documents/doc869/char=234,241>,
+    <http://lod.opencorpora.org/documents/doc869/char=242,249>,
+    <http://lod.opencorpora.org/documents/doc869/char=250,256>,
+    <http://lod.opencorpora.org/documents/doc869/char=257,267>,
+    <http://lod.opencorpora.org/documents/doc869/char=268,274>,
+    <http://lod.opencorpora.org/documents/doc869/char=274,275>.
+
+<http://lod.opencorpora.org/documents/doc869/char=162,172>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №1 предложения №5 документа №869 “планировал”"@ru,
+    "Word #1 of the sentence #5 of the document #869 “планировал”"@en;
+  conll:ID "502102";
+  opencorpora:wordNumber "1"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc869/char=0,275>;
+  nif:anchorOf "планировал";
+  nif:beginIndex "162"^^xsd:int;
+  nif:endIndex "172"^^xsd:int;
+  nif:lemma "планирую"@ru;
+  nif:posTag "VERB";
+  conll:POS_URI opencorpora:VERB;
+  nif:oliaLink 
+    opencorpora:VERB,
+    opencorpora:impf,
+    opencorpora:tran,
+    opencorpora:masc,
+    opencorpora:sing,
+    opencorpora:past,
+    opencorpora:indc;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc869/char=162,275>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc869/char=173,177>.
+
+<http://lod.opencorpora.org/documents/doc869/char=173,177>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №2 предложения №5 документа №869 “даже”"@ru,
+    "Word #2 of the sentence #5 of the document #869 “даже”"@en;
+  conll:ID "502103";
+  opencorpora:wordNumber "2"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc869/char=0,275>;
+  nif:anchorOf "даже";
+  nif:beginIndex "173"^^xsd:int;
+  nif:endIndex "177"^^xsd:int;
+  nif:lemma "даже"@ru;
+  nif:posTag "PRCL";
+  conll:POS_URI opencorpora:PRCL;
+  nif:oliaLink 
+    opencorpora:PRCL;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc869/char=162,275>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc869/char=162,172>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc869/char=178,192>.
+
+<http://lod.opencorpora.org/documents/doc869/char=178,192>
+  a nif:String, nif:Word, nif:OffsetBasedString;
+  rdfs:label 
+    "Слово №3 предложения №5 документа №869 “самостоятельно”"@ru,
+    "Word #3 of the sentence #5 of the document #869 “самостоятельно”"@en;
+  conll:ID "502104";
+  opencorpora:wordNumber "3"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc869/char=0,275>;
+  nif:anchorOf "самостоятельно";
+  nif:beginIndex "178"^^xsd:int;
+  nif:endIndex "192"^^xsd:int;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc869/char=162,275>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc869/char=173,177>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc869/char=193,203>.
+
+<http://lod.opencorpora.org/documents/doc869/char=193,203>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №4 предложения №5 документа №869 “отпиливать”"@ru,
+    "Word #4 of the sentence #5 of the document #869 “отпиливать”"@en;
+  conll:ID "502105";
+  opencorpora:wordNumber "4"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc869/char=0,275>;
+  nif:anchorOf "отпиливать";
+  nif:beginIndex "193"^^xsd:int;
+  nif:endIndex "203"^^xsd:int;
+  nif:lemma "отпиливать"@ru;
+  nif:posTag "INFN";
+  conll:POS_URI opencorpora:INFN;
+  nif:oliaLink 
+    opencorpora:INFN,
+    opencorpora:impf,
+    opencorpora:tran;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc869/char=162,275>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc869/char=178,192>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc869/char=204,205>.
+
+<http://lod.opencorpora.org/documents/doc869/char=204,205>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №5 предложения №5 документа №869 “-”"@ru,
+    "Word #5 of the sentence #5 of the document #869 “-”"@en;
+  conll:ID "502106";
+  opencorpora:wordNumber "5"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc869/char=0,275>;
+  nif:anchorOf "-";
+  nif:beginIndex "204"^^xsd:int;
+  nif:endIndex "205"^^xsd:int;
+  nif:lemma "-"@ru;
+  nif:posTag "PNCT";
+  conll:POS_URI opencorpora:PNCT;
+  nif:oliaLink 
+    opencorpora:PNCT;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc869/char=162,275>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc869/char=193,203>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc869/char=206,208>.
+
+<http://lod.opencorpora.org/documents/doc869/char=206,208>
+  a nif:String, nif:Word, nif:OffsetBasedString;
+  rdfs:label 
+    "Слово №6 предложения №5 документа №869 “ну”"@ru,
+    "Word #6 of the sentence #5 of the document #869 “ну”"@en;
+  conll:ID "502107";
+  opencorpora:wordNumber "6"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc869/char=0,275>;
+  nif:anchorOf "ну";
+  nif:beginIndex "206"^^xsd:int;
+  nif:endIndex "208"^^xsd:int;
+  nif:lemma "ну"@ru;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc869/char=162,275>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc869/char=204,205>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc869/char=209,210>.
+
+<http://lod.opencorpora.org/documents/doc869/char=209,210>
+  a nif:String, nif:Word, nif:OffsetBasedString;
+  rdfs:label 
+    "Слово №7 предложения №5 документа №869 “а”"@ru,
+    "Word #7 of the sentence #5 of the document #869 “а”"@en;
+  conll:ID "502108";
+  opencorpora:wordNumber "7"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc869/char=0,275>;
+  nif:anchorOf "а";
+  nif:beginIndex "209"^^xsd:int;
+  nif:endIndex "210"^^xsd:int;
+  nif:lemma "а"@ru;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc869/char=162,275>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc869/char=206,208>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc869/char=211,217>.
+
+<http://lod.opencorpora.org/documents/doc869/char=211,217>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №8 предложения №5 документа №869 “теперь”"@ru,
+    "Word #8 of the sentence #5 of the document #869 “теперь”"@en;
+  conll:ID "502109";
+  opencorpora:wordNumber "8"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc869/char=0,275>;
+  nif:anchorOf "теперь";
+  nif:beginIndex "211"^^xsd:int;
+  nif:endIndex "217"^^xsd:int;
+  nif:lemma "теперь"@ru;
+  nif:posTag "ADVB";
+  conll:POS_URI opencorpora:ADVB;
+  nif:oliaLink 
+    opencorpora:ADVB;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc869/char=162,275>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc869/char=209,210>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc869/char=218,226>.
+
+<http://lod.opencorpora.org/documents/doc869/char=218,226>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №9 предложения №5 документа №869 “осталось”"@ru,
+    "Word #9 of the sentence #5 of the document #869 “осталось”"@en;
+  conll:ID "502110";
+  opencorpora:wordNumber "9"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc869/char=0,275>;
+  nif:anchorOf "осталось";
+  nif:beginIndex "218"^^xsd:int;
+  nif:endIndex "226"^^xsd:int;
+  nif:lemma "остался"@ru;
+  nif:posTag "VERB";
+  conll:POS_URI opencorpora:VERB;
+  nif:oliaLink 
+    opencorpora:VERB,
+    opencorpora:perf,
+    opencorpora:intr,
+    opencorpora:neut,
+    opencorpora:sing,
+    opencorpora:past,
+    opencorpora:indc;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc869/char=162,275>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc869/char=211,217>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc869/char=227,233>.
+
+<http://lod.opencorpora.org/documents/doc869/char=227,233>
+  a nif:String, nif:Word, nif:OffsetBasedString;
+  rdfs:label 
+    "Слово №10 предложения №5 документа №869 “только”"@ru,
+    "Word #10 of the sentence #5 of the document #869 “только”"@en;
+  conll:ID "502111";
+  opencorpora:wordNumber "10"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc869/char=0,275>;
+  nif:anchorOf "только";
+  nif:beginIndex "227"^^xsd:int;
+  nif:endIndex "233"^^xsd:int;
+  nif:lemma "только"@ru;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc869/char=162,275>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc869/char=218,226>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc869/char=234,241>.
+
+<http://lod.opencorpora.org/documents/doc869/char=234,241>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №11 предложения №5 документа №869 “сказать”"@ru,
+    "Word #11 of the sentence #5 of the document #869 “сказать”"@en;
+  conll:ID "502112";
+  opencorpora:wordNumber "11"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc869/char=0,275>;
+  nif:anchorOf "сказать";
+  nif:beginIndex "234"^^xsd:int;
+  nif:endIndex "241"^^xsd:int;
+  nif:lemma "сказать"@ru;
+  nif:posTag "INFN";
+  conll:POS_URI opencorpora:INFN;
+  nif:oliaLink 
+    opencorpora:INFN,
+    opencorpora:perf,
+    opencorpora:tran;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc869/char=162,275>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc869/char=227,233>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc869/char=242,249>.
+
+<http://lod.opencorpora.org/documents/doc869/char=242,249>
+  a nif:String, nif:Word, nif:OffsetBasedString;
+  rdfs:label 
+    "Слово №12 предложения №5 документа №869 “спасибо”"@ru,
+    "Word #12 of the sentence #5 of the document #869 “спасибо”"@en;
+  conll:ID "502113";
+  opencorpora:wordNumber "12"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc869/char=0,275>;
+  nif:anchorOf "спасибо";
+  nif:beginIndex "242"^^xsd:int;
+  nif:endIndex "249"^^xsd:int;
+  nif:lemma "спасибо"@ru;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc869/char=162,275>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc869/char=234,241>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc869/char=250,256>.
+
+<http://lod.opencorpora.org/documents/doc869/char=250,256>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №13 предложения №5 документа №869 “службе”"@ru,
+    "Word #13 of the sentence #5 of the document #869 “службе”"@en;
+  conll:ID "502114";
+  opencorpora:wordNumber "13"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc869/char=0,275>;
+  nif:anchorOf "службе";
+  nif:beginIndex "250"^^xsd:int;
+  nif:endIndex "256"^^xsd:int;
+  nif:lemma "служба"@ru;
+  nif:posTag "NOUN";
+  conll:POS_URI opencorpora:NOUN;
+  nif:oliaLink 
+    opencorpora:NOUN,
+    opencorpora:inan,
+    opencorpora:femn,
+    opencorpora:sing,
+    opencorpora:datv;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc869/char=162,275>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc869/char=242,249>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc869/char=257,267>.
+
+<http://lod.opencorpora.org/documents/doc869/char=257,267>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №14 предложения №5 документа №869 “озеленения”"@ru,
+    "Word #14 of the sentence #5 of the document #869 “озеленения”"@en;
+  conll:ID "502115";
+  opencorpora:wordNumber "14"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc869/char=0,275>;
+  nif:anchorOf "озеленения";
+  nif:beginIndex "257"^^xsd:int;
+  nif:endIndex "267"^^xsd:int;
+  nif:lemma "озеленение"@ru;
+  nif:posTag "NOUN";
+  conll:POS_URI opencorpora:NOUN;
+  nif:oliaLink 
+    opencorpora:NOUN,
+    opencorpora:inan,
+    opencorpora:neut,
+    opencorpora:sing,
+    opencorpora:gent;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc869/char=162,275>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc869/char=250,256>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc869/char=268,274>.
+
+<http://lod.opencorpora.org/documents/doc869/char=268,274>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №15 предложения №5 документа №869 “города”"@ru,
+    "Word #15 of the sentence #5 of the document #869 “города”"@en;
+  conll:ID "502116";
+  opencorpora:wordNumber "15"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc869/char=0,275>;
+  nif:anchorOf "города";
+  nif:beginIndex "268"^^xsd:int;
+  nif:endIndex "274"^^xsd:int;
+  nif:lemma "город"@ru;
+  nif:posTag "NOUN";
+  conll:POS_URI opencorpora:NOUN;
+  nif:oliaLink 
+    opencorpora:NOUN,
+    opencorpora:inan,
+    opencorpora:masc,
+    opencorpora:sing,
+    opencorpora:gent;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc869/char=162,275>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc869/char=257,267>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc869/char=274,275>.
+
+<http://lod.opencorpora.org/documents/doc869/char=274,275>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №16 предложения №5 документа №869 “.”"@ru,
+    "Word #16 of the sentence #5 of the document #869 “.”"@en;
+  conll:ID "502117";
+  opencorpora:wordNumber "16"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc869/char=0,275>;
+  nif:anchorOf ".";
+  nif:beginIndex "274"^^xsd:int;
+  nif:endIndex "275"^^xsd:int;
+  nif:lemma "."@ru;
+  nif:posTag "PNCT";
+  conll:POS_URI opencorpora:PNCT;
+  nif:oliaLink 
+    opencorpora:PNCT;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc869/char=162,275>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc869/char=268,274>.
+
+

@@ -1,0 +1,1603 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix schema: <http://schema.org/>.
+@prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#>.
+@prefix conll: <http://purl.org/acoli/conll#>.
+@prefix opencorpora: <http://lod.opencorpora.org/ontology#>.
+
+<http://lod.opencorpora.org/documents/doc1301>
+  a foaf:Document;
+  dcterms:title "0092280 концерт в музыкальном училище";
+  dcterms:created "2009-06-10"^^xsd:date;
+  owl:sameAs <http://l-i-d-y-a.livejournal.com/92280.html>.
+
+<http://lod.opencorpora.org/documents/doc1301/char=0,322>
+  a nif:String, nif:Context, nif:OffsetBasedString;
+  rdfs:label 
+    "Текст документа №1301 “0092280 концерт в музыкальном училище”"@ru,
+    "Text of the document#1301 “0092280 концерт в музыкальном училище”"@en;
+  conll:DOCUMENT_ID "1301";
+  nif:isString """концерт в музыкальном училище
+На органе играют руками и ногами. И специально обученный человек переключает регистры и перелистывает ноты. А в стародавние времена еще был третий, который раздувал мехи.
+Органу явно тесно в концертном классе. Очевидно, собор - резонатор - это часть инструмента.
+Один орган - это уже оркестр.""";
+  nif:beginIndex "0"^^xsd:int;
+  nif:endIndex "322"^^xsd:int;
+  opencorpora:belongsToCollection 
+    <http://lod.opencorpora.org/opencorpora>;
+  nif:sourceUrl 
+    <http://lod.opencorpora.org/documents/doc1301>.
+
+<http://lod.opencorpora.org/documents/doc1301/char=0,29>
+  a nif:String, nif:Sentence, nif:OffsetBasedString, opencorpora:FullyMorphologicallyDisambiguated;
+  rdfs:label 
+    "Предложение №1 документа №1301 “концерт в музыкальном училище”"@ru,
+    "Sentence #1 of the document #1301 “концерт в музыкальном училище”"@en;
+  conll:SENTENCE_ID "37073";
+  opencorpora:sentenceNumber "1"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1301/char=0,322>;
+  nif:anchorOf """концерт в музыкальном училище""";
+  nif:beginIndex "0"^^xsd:int;
+  nif:endIndex "29"^^xsd:int;
+  nif:nextSentence 
+    <http://lod.opencorpora.org/documents/doc1301/char=30,63>;
+  nif:firstWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=0,7>;
+  nif:word 
+    <http://lod.opencorpora.org/documents/doc1301/char=0,7>,
+    <http://lod.opencorpora.org/documents/doc1301/char=8,9>,
+    <http://lod.opencorpora.org/documents/doc1301/char=10,21>,
+    <http://lod.opencorpora.org/documents/doc1301/char=22,29>.
+
+<http://lod.opencorpora.org/documents/doc1301/char=0,7>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №1 предложения №1 документа №1301 “концерт”"@ru,
+    "Word #1 of the sentence #1 of the document #1301 “концерт”"@en;
+  conll:ID "662675";
+  opencorpora:wordNumber "1"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1301/char=0,322>;
+  nif:anchorOf "концерт";
+  nif:beginIndex "0"^^xsd:int;
+  nif:endIndex "7"^^xsd:int;
+  nif:lemma "концерт"@ru;
+  nif:posTag "NOUN";
+  conll:POS_URI opencorpora:NOUN;
+  nif:oliaLink 
+    opencorpora:NOUN,
+    opencorpora:inan,
+    opencorpora:masc,
+    opencorpora:sing,
+    opencorpora:nomn;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1301/char=0,29>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=8,9>.
+
+<http://lod.opencorpora.org/documents/doc1301/char=8,9>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №2 предложения №1 документа №1301 “в”"@ru,
+    "Word #2 of the sentence #1 of the document #1301 “в”"@en;
+  conll:ID "662676";
+  opencorpora:wordNumber "2"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1301/char=0,322>;
+  nif:anchorOf "в";
+  nif:beginIndex "8"^^xsd:int;
+  nif:endIndex "9"^^xsd:int;
+  nif:lemma "в"@ru;
+  nif:posTag "PREP";
+  conll:POS_URI opencorpora:PREP;
+  nif:oliaLink 
+    opencorpora:PREP;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1301/char=0,29>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=0,7>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=10,21>.
+
+<http://lod.opencorpora.org/documents/doc1301/char=10,21>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №3 предложения №1 документа №1301 “музыкальном”"@ru,
+    "Word #3 of the sentence #1 of the document #1301 “музыкальном”"@en;
+  conll:ID "662677";
+  opencorpora:wordNumber "3"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1301/char=0,322>;
+  nif:anchorOf "музыкальном";
+  nif:beginIndex "10"^^xsd:int;
+  nif:endIndex "21"^^xsd:int;
+  nif:lemma "музыкальный"@ru;
+  nif:posTag "ADJF";
+  conll:POS_URI opencorpora:ADJF;
+  nif:oliaLink 
+    opencorpora:ADJF,
+    opencorpora:Qual,
+    opencorpora:neut,
+    opencorpora:sing,
+    opencorpora:loct;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1301/char=0,29>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=8,9>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=22,29>.
+
+<http://lod.opencorpora.org/documents/doc1301/char=22,29>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №4 предложения №1 документа №1301 “училище”"@ru,
+    "Word #4 of the sentence #1 of the document #1301 “училище”"@en;
+  conll:ID "662678";
+  opencorpora:wordNumber "4"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1301/char=0,322>;
+  nif:anchorOf "училище";
+  nif:beginIndex "22"^^xsd:int;
+  nif:endIndex "29"^^xsd:int;
+  nif:lemma "училище"@ru;
+  nif:posTag "NOUN";
+  conll:POS_URI opencorpora:NOUN;
+  nif:oliaLink 
+    opencorpora:NOUN,
+    opencorpora:inan,
+    opencorpora:neut,
+    opencorpora:sing,
+    opencorpora:loct;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1301/char=0,29>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=10,21>.
+
+<http://lod.opencorpora.org/documents/doc1301/char=30,63>
+  a nif:String, nif:Sentence, nif:OffsetBasedString;
+  rdfs:label 
+    "Предложение №2 документа №1301 “На органе играют руками и ногами.”"@ru,
+    "Sentence #2 of the document #1301 “На органе играют руками и ногами.”"@en;
+  conll:SENTENCE_ID "37074";
+  opencorpora:sentenceNumber "2"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1301/char=0,322>;
+  nif:anchorOf """На органе играют руками и ногами.""";
+  nif:beginIndex "30"^^xsd:int;
+  nif:endIndex "63"^^xsd:int;
+  nif:previousSentence 
+    <http://lod.opencorpora.org/documents/doc1301/char=0,29>;
+  nif:nextSentence 
+    <http://lod.opencorpora.org/documents/doc1301/char=64,137>;
+  nif:firstWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=30,32>;
+  nif:word 
+    <http://lod.opencorpora.org/documents/doc1301/char=30,32>,
+    <http://lod.opencorpora.org/documents/doc1301/char=33,39>,
+    <http://lod.opencorpora.org/documents/doc1301/char=40,46>,
+    <http://lod.opencorpora.org/documents/doc1301/char=47,53>,
+    <http://lod.opencorpora.org/documents/doc1301/char=54,55>,
+    <http://lod.opencorpora.org/documents/doc1301/char=56,62>,
+    <http://lod.opencorpora.org/documents/doc1301/char=62,63>.
+
+<http://lod.opencorpora.org/documents/doc1301/char=30,32>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №1 предложения №2 документа №1301 “На”"@ru,
+    "Word #1 of the sentence #2 of the document #1301 “На”"@en;
+  conll:ID "662679";
+  opencorpora:wordNumber "1"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1301/char=0,322>;
+  nif:anchorOf "На";
+  nif:beginIndex "30"^^xsd:int;
+  nif:endIndex "32"^^xsd:int;
+  nif:lemma "на"@ru;
+  nif:posTag "PREP";
+  conll:POS_URI opencorpora:PREP;
+  nif:oliaLink 
+    opencorpora:PREP;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1301/char=30,63>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=33,39>.
+
+<http://lod.opencorpora.org/documents/doc1301/char=33,39>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №2 предложения №2 документа №1301 “органе”"@ru,
+    "Word #2 of the sentence #2 of the document #1301 “органе”"@en;
+  conll:ID "662680";
+  opencorpora:wordNumber "2"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1301/char=0,322>;
+  nif:anchorOf "органе";
+  nif:beginIndex "33"^^xsd:int;
+  nif:endIndex "39"^^xsd:int;
+  nif:lemma "орган"@ru;
+  nif:posTag "NOUN";
+  conll:POS_URI opencorpora:NOUN;
+  nif:oliaLink 
+    opencorpora:NOUN,
+    opencorpora:inan,
+    opencorpora:masc,
+    opencorpora:sing,
+    opencorpora:loct;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1301/char=30,63>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=30,32>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=40,46>.
+
+<http://lod.opencorpora.org/documents/doc1301/char=40,46>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №3 предложения №2 документа №1301 “играют”"@ru,
+    "Word #3 of the sentence #2 of the document #1301 “играют”"@en;
+  conll:ID "662681";
+  opencorpora:wordNumber "3"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1301/char=0,322>;
+  nif:anchorOf "играют";
+  nif:beginIndex "40"^^xsd:int;
+  nif:endIndex "46"^^xsd:int;
+  nif:lemma "играю"@ru;
+  nif:posTag "VERB";
+  conll:POS_URI opencorpora:VERB;
+  nif:oliaLink 
+    opencorpora:VERB,
+    opencorpora:impf,
+    opencorpora:tran,
+    opencorpora:plur,
+    opencorpora:3per,
+    opencorpora:pres,
+    opencorpora:indc;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1301/char=30,63>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=33,39>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=47,53>.
+
+<http://lod.opencorpora.org/documents/doc1301/char=47,53>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №4 предложения №2 документа №1301 “руками”"@ru,
+    "Word #4 of the sentence #2 of the document #1301 “руками”"@en;
+  conll:ID "662682";
+  opencorpora:wordNumber "4"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1301/char=0,322>;
+  nif:anchorOf "руками";
+  nif:beginIndex "47"^^xsd:int;
+  nif:endIndex "53"^^xsd:int;
+  nif:lemma "рука"@ru;
+  nif:posTag "NOUN";
+  conll:POS_URI opencorpora:NOUN;
+  nif:oliaLink 
+    opencorpora:NOUN,
+    opencorpora:inan,
+    opencorpora:femn,
+    opencorpora:plur,
+    opencorpora:ablt;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1301/char=30,63>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=40,46>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=54,55>.
+
+<http://lod.opencorpora.org/documents/doc1301/char=54,55>
+  a nif:String, nif:Word, nif:OffsetBasedString;
+  rdfs:label 
+    "Слово №5 предложения №2 документа №1301 “и”"@ru,
+    "Word #5 of the sentence #2 of the document #1301 “и”"@en;
+  conll:ID "662683";
+  opencorpora:wordNumber "5"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1301/char=0,322>;
+  nif:anchorOf "и";
+  nif:beginIndex "54"^^xsd:int;
+  nif:endIndex "55"^^xsd:int;
+  nif:lemma "и"@ru;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1301/char=30,63>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=47,53>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=56,62>.
+
+<http://lod.opencorpora.org/documents/doc1301/char=56,62>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №6 предложения №2 документа №1301 “ногами”"@ru,
+    "Word #6 of the sentence #2 of the document #1301 “ногами”"@en;
+  conll:ID "662684";
+  opencorpora:wordNumber "6"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1301/char=0,322>;
+  nif:anchorOf "ногами";
+  nif:beginIndex "56"^^xsd:int;
+  nif:endIndex "62"^^xsd:int;
+  nif:lemma "нога"@ru;
+  nif:posTag "NOUN";
+  conll:POS_URI opencorpora:NOUN;
+  nif:oliaLink 
+    opencorpora:NOUN,
+    opencorpora:inan,
+    opencorpora:femn,
+    opencorpora:plur,
+    opencorpora:ablt;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1301/char=30,63>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=54,55>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=62,63>.
+
+<http://lod.opencorpora.org/documents/doc1301/char=62,63>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №7 предложения №2 документа №1301 “.”"@ru,
+    "Word #7 of the sentence #2 of the document #1301 “.”"@en;
+  conll:ID "662685";
+  opencorpora:wordNumber "7"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1301/char=0,322>;
+  nif:anchorOf ".";
+  nif:beginIndex "62"^^xsd:int;
+  nif:endIndex "63"^^xsd:int;
+  nif:lemma "."@ru;
+  nif:posTag "PNCT";
+  conll:POS_URI opencorpora:PNCT;
+  nif:oliaLink 
+    opencorpora:PNCT;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1301/char=30,63>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=56,62>.
+
+<http://lod.opencorpora.org/documents/doc1301/char=64,137>
+  a nif:String, nif:Sentence, nif:OffsetBasedString;
+  rdfs:label 
+    "Предложение №3 документа №1301 “И специально обученный человек переключает регистры и перелистывает ноты.”"@ru,
+    "Sentence #3 of the document #1301 “И специально обученный человек переключает регистры и перелистывает ноты.”"@en;
+  conll:SENTENCE_ID "37075";
+  opencorpora:sentenceNumber "3"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1301/char=0,322>;
+  nif:anchorOf """И специально обученный человек переключает регистры и перелистывает ноты.""";
+  nif:beginIndex "64"^^xsd:int;
+  nif:endIndex "137"^^xsd:int;
+  nif:previousSentence 
+    <http://lod.opencorpora.org/documents/doc1301/char=30,63>;
+  nif:nextSentence 
+    <http://lod.opencorpora.org/documents/doc1301/char=138,200>;
+  nif:firstWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=64,65>;
+  nif:word 
+    <http://lod.opencorpora.org/documents/doc1301/char=64,65>,
+    <http://lod.opencorpora.org/documents/doc1301/char=66,76>,
+    <http://lod.opencorpora.org/documents/doc1301/char=77,86>,
+    <http://lod.opencorpora.org/documents/doc1301/char=87,94>,
+    <http://lod.opencorpora.org/documents/doc1301/char=95,106>,
+    <http://lod.opencorpora.org/documents/doc1301/char=107,115>,
+    <http://lod.opencorpora.org/documents/doc1301/char=116,117>,
+    <http://lod.opencorpora.org/documents/doc1301/char=118,131>,
+    <http://lod.opencorpora.org/documents/doc1301/char=132,136>,
+    <http://lod.opencorpora.org/documents/doc1301/char=136,137>.
+
+<http://lod.opencorpora.org/documents/doc1301/char=64,65>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №1 предложения №3 документа №1301 “И”"@ru,
+    "Word #1 of the sentence #3 of the document #1301 “И”"@en;
+  conll:ID "662686";
+  opencorpora:wordNumber "1"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1301/char=0,322>;
+  nif:anchorOf "И";
+  nif:beginIndex "64"^^xsd:int;
+  nif:endIndex "65"^^xsd:int;
+  nif:lemma "и"@ru;
+  nif:posTag "CONJ";
+  conll:POS_URI opencorpora:CONJ;
+  nif:oliaLink 
+    opencorpora:CONJ;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1301/char=64,137>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=66,76>.
+
+<http://lod.opencorpora.org/documents/doc1301/char=66,76>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №2 предложения №3 документа №1301 “специально”"@ru,
+    "Word #2 of the sentence #3 of the document #1301 “специально”"@en;
+  conll:ID "662687";
+  opencorpora:wordNumber "2"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1301/char=0,322>;
+  nif:anchorOf "специально";
+  nif:beginIndex "66"^^xsd:int;
+  nif:endIndex "76"^^xsd:int;
+  nif:lemma "специально"@ru;
+  nif:posTag "ADVB";
+  conll:POS_URI opencorpora:ADVB;
+  nif:oliaLink 
+    opencorpora:ADVB;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1301/char=64,137>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=64,65>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=77,86>.
+
+<http://lod.opencorpora.org/documents/doc1301/char=77,86>
+  a nif:String, nif:Word, nif:OffsetBasedString;
+  rdfs:label 
+    "Слово №3 предложения №3 документа №1301 “обученный”"@ru,
+    "Word #3 of the sentence #3 of the document #1301 “обученный”"@en;
+  conll:ID "662688";
+  opencorpora:wordNumber "3"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1301/char=0,322>;
+  nif:anchorOf "обученный";
+  nif:beginIndex "77"^^xsd:int;
+  nif:endIndex "86"^^xsd:int;
+  nif:lemma "обученный"@ru;
+  nif:oliaLink 
+    opencorpora:masc,
+    opencorpora:sing;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1301/char=64,137>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=66,76>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=87,94>.
+
+<http://lod.opencorpora.org/documents/doc1301/char=87,94>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №4 предложения №3 документа №1301 “человек”"@ru,
+    "Word #4 of the sentence #3 of the document #1301 “человек”"@en;
+  conll:ID "662689";
+  opencorpora:wordNumber "4"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1301/char=0,322>;
+  nif:anchorOf "человек";
+  nif:beginIndex "87"^^xsd:int;
+  nif:endIndex "94"^^xsd:int;
+  nif:lemma "человек"@ru;
+  nif:posTag "NOUN";
+  conll:POS_URI opencorpora:NOUN;
+  nif:oliaLink 
+    opencorpora:NOUN,
+    opencorpora:anim,
+    opencorpora:masc,
+    opencorpora:sing,
+    opencorpora:nomn;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1301/char=64,137>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=77,86>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=95,106>.
+
+<http://lod.opencorpora.org/documents/doc1301/char=95,106>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №5 предложения №3 документа №1301 “переключает”"@ru,
+    "Word #5 of the sentence #3 of the document #1301 “переключает”"@en;
+  conll:ID "662690";
+  opencorpora:wordNumber "5"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1301/char=0,322>;
+  nif:anchorOf "переключает";
+  nif:beginIndex "95"^^xsd:int;
+  nif:endIndex "106"^^xsd:int;
+  nif:lemma "переключаю"@ru;
+  nif:posTag "VERB";
+  conll:POS_URI opencorpora:VERB;
+  nif:oliaLink 
+    opencorpora:VERB,
+    opencorpora:impf,
+    opencorpora:tran,
+    opencorpora:sing,
+    opencorpora:3per,
+    opencorpora:pres,
+    opencorpora:indc;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1301/char=64,137>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=87,94>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=107,115>.
+
+<http://lod.opencorpora.org/documents/doc1301/char=107,115>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №6 предложения №3 документа №1301 “регистры”"@ru,
+    "Word #6 of the sentence #3 of the document #1301 “регистры”"@en;
+  conll:ID "662691";
+  opencorpora:wordNumber "6"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1301/char=0,322>;
+  nif:anchorOf "регистры";
+  nif:beginIndex "107"^^xsd:int;
+  nif:endIndex "115"^^xsd:int;
+  nif:lemma "регистр"@ru;
+  nif:posTag "NOUN";
+  conll:POS_URI opencorpora:NOUN;
+  nif:oliaLink 
+    opencorpora:NOUN,
+    opencorpora:inan,
+    opencorpora:masc,
+    opencorpora:plur,
+    opencorpora:accs;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1301/char=64,137>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=95,106>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=116,117>.
+
+<http://lod.opencorpora.org/documents/doc1301/char=116,117>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №7 предложения №3 документа №1301 “и”"@ru,
+    "Word #7 of the sentence #3 of the document #1301 “и”"@en;
+  conll:ID "662692";
+  opencorpora:wordNumber "7"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1301/char=0,322>;
+  nif:anchorOf "и";
+  nif:beginIndex "116"^^xsd:int;
+  nif:endIndex "117"^^xsd:int;
+  nif:lemma "и"@ru;
+  nif:posTag "CONJ";
+  conll:POS_URI opencorpora:CONJ;
+  nif:oliaLink 
+    opencorpora:CONJ;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1301/char=64,137>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=107,115>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=118,131>.
+
+<http://lod.opencorpora.org/documents/doc1301/char=118,131>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №8 предложения №3 документа №1301 “перелистывает”"@ru,
+    "Word #8 of the sentence #3 of the document #1301 “перелистывает”"@en;
+  conll:ID "662693";
+  opencorpora:wordNumber "8"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1301/char=0,322>;
+  nif:anchorOf "перелистывает";
+  nif:beginIndex "118"^^xsd:int;
+  nif:endIndex "131"^^xsd:int;
+  nif:lemma "перелистываю"@ru;
+  nif:posTag "VERB";
+  conll:POS_URI opencorpora:VERB;
+  nif:oliaLink 
+    opencorpora:VERB,
+    opencorpora:impf,
+    opencorpora:tran,
+    opencorpora:sing,
+    opencorpora:3per,
+    opencorpora:pres,
+    opencorpora:indc;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1301/char=64,137>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=116,117>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=132,136>.
+
+<http://lod.opencorpora.org/documents/doc1301/char=132,136>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №9 предложения №3 документа №1301 “ноты”"@ru,
+    "Word #9 of the sentence #3 of the document #1301 “ноты”"@en;
+  conll:ID "662694";
+  opencorpora:wordNumber "9"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1301/char=0,322>;
+  nif:anchorOf "ноты";
+  nif:beginIndex "132"^^xsd:int;
+  nif:endIndex "136"^^xsd:int;
+  nif:lemma "нота"@ru;
+  nif:posTag "NOUN";
+  conll:POS_URI opencorpora:NOUN;
+  nif:oliaLink 
+    opencorpora:NOUN,
+    opencorpora:inan,
+    opencorpora:femn,
+    opencorpora:plur,
+    opencorpora:accs;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1301/char=64,137>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=118,131>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=136,137>.
+
+<http://lod.opencorpora.org/documents/doc1301/char=136,137>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №10 предложения №3 документа №1301 “.”"@ru,
+    "Word #10 of the sentence #3 of the document #1301 “.”"@en;
+  conll:ID "662695";
+  opencorpora:wordNumber "10"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1301/char=0,322>;
+  nif:anchorOf ".";
+  nif:beginIndex "136"^^xsd:int;
+  nif:endIndex "137"^^xsd:int;
+  nif:lemma "."@ru;
+  nif:posTag "PNCT";
+  conll:POS_URI opencorpora:PNCT;
+  nif:oliaLink 
+    opencorpora:PNCT;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1301/char=64,137>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=132,136>.
+
+<http://lod.opencorpora.org/documents/doc1301/char=138,200>
+  a nif:String, nif:Sentence, nif:OffsetBasedString;
+  rdfs:label 
+    "Предложение №4 документа №1301 “А в стародавние времена еще был третий, который раздувал мехи.”"@ru,
+    "Sentence #4 of the document #1301 “А в стародавние времена еще был третий, который раздувал мехи.”"@en;
+  conll:SENTENCE_ID "37076";
+  opencorpora:sentenceNumber "4"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1301/char=0,322>;
+  nif:anchorOf """А в стародавние времена еще был третий, который раздувал мехи.""";
+  nif:beginIndex "138"^^xsd:int;
+  nif:endIndex "200"^^xsd:int;
+  nif:previousSentence 
+    <http://lod.opencorpora.org/documents/doc1301/char=64,137>;
+  nif:nextSentence 
+    <http://lod.opencorpora.org/documents/doc1301/char=201,239>;
+  nif:firstWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=138,139>;
+  nif:word 
+    <http://lod.opencorpora.org/documents/doc1301/char=138,139>,
+    <http://lod.opencorpora.org/documents/doc1301/char=140,141>,
+    <http://lod.opencorpora.org/documents/doc1301/char=142,153>,
+    <http://lod.opencorpora.org/documents/doc1301/char=154,161>,
+    <http://lod.opencorpora.org/documents/doc1301/char=162,165>,
+    <http://lod.opencorpora.org/documents/doc1301/char=166,169>,
+    <http://lod.opencorpora.org/documents/doc1301/char=170,176>,
+    <http://lod.opencorpora.org/documents/doc1301/char=176,177>,
+    <http://lod.opencorpora.org/documents/doc1301/char=178,185>,
+    <http://lod.opencorpora.org/documents/doc1301/char=186,194>,
+    <http://lod.opencorpora.org/documents/doc1301/char=195,199>,
+    <http://lod.opencorpora.org/documents/doc1301/char=199,200>.
+
+<http://lod.opencorpora.org/documents/doc1301/char=138,139>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №1 предложения №4 документа №1301 “А”"@ru,
+    "Word #1 of the sentence #4 of the document #1301 “А”"@en;
+  conll:ID "662696";
+  opencorpora:wordNumber "1"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1301/char=0,322>;
+  nif:anchorOf "А";
+  nif:beginIndex "138"^^xsd:int;
+  nif:endIndex "139"^^xsd:int;
+  nif:lemma "а"@ru;
+  nif:posTag "CONJ";
+  conll:POS_URI opencorpora:CONJ;
+  nif:oliaLink 
+    opencorpora:CONJ;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1301/char=138,200>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=140,141>.
+
+<http://lod.opencorpora.org/documents/doc1301/char=140,141>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №2 предложения №4 документа №1301 “в”"@ru,
+    "Word #2 of the sentence #4 of the document #1301 “в”"@en;
+  conll:ID "662697";
+  opencorpora:wordNumber "2"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1301/char=0,322>;
+  nif:anchorOf "в";
+  nif:beginIndex "140"^^xsd:int;
+  nif:endIndex "141"^^xsd:int;
+  nif:lemma "в"@ru;
+  nif:posTag "PREP";
+  conll:POS_URI opencorpora:PREP;
+  nif:oliaLink 
+    opencorpora:PREP;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1301/char=138,200>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=138,139>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=142,153>.
+
+<http://lod.opencorpora.org/documents/doc1301/char=142,153>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №3 предложения №4 документа №1301 “стародавние”"@ru,
+    "Word #3 of the sentence #4 of the document #1301 “стародавние”"@en;
+  conll:ID "662698";
+  opencorpora:wordNumber "3"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1301/char=0,322>;
+  nif:anchorOf "стародавние";
+  nif:beginIndex "142"^^xsd:int;
+  nif:endIndex "153"^^xsd:int;
+  nif:lemma "стародавний"@ru;
+  nif:posTag "ADJF";
+  conll:POS_URI opencorpora:ADJF;
+  nif:oliaLink 
+    opencorpora:ADJF,
+    opencorpora:inan,
+    opencorpora:plur,
+    opencorpora:accs;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1301/char=138,200>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=140,141>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=154,161>.
+
+<http://lod.opencorpora.org/documents/doc1301/char=154,161>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №4 предложения №4 документа №1301 “времена”"@ru,
+    "Word #4 of the sentence #4 of the document #1301 “времена”"@en;
+  conll:ID "662699";
+  opencorpora:wordNumber "4"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1301/char=0,322>;
+  nif:anchorOf "времена";
+  nif:beginIndex "154"^^xsd:int;
+  nif:endIndex "161"^^xsd:int;
+  nif:lemma "время"@ru;
+  nif:posTag "NOUN";
+  conll:POS_URI opencorpora:NOUN;
+  nif:oliaLink 
+    opencorpora:NOUN,
+    opencorpora:inan,
+    opencorpora:neut,
+    opencorpora:plur,
+    opencorpora:accs;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1301/char=138,200>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=142,153>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=162,165>.
+
+<http://lod.opencorpora.org/documents/doc1301/char=162,165>
+  a nif:String, nif:Word, nif:OffsetBasedString;
+  rdfs:label 
+    "Слово №5 предложения №4 документа №1301 “еще”"@ru,
+    "Word #5 of the sentence #4 of the document #1301 “еще”"@en;
+  conll:ID "662700";
+  opencorpora:wordNumber "5"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1301/char=0,322>;
+  nif:anchorOf "еще";
+  nif:beginIndex "162"^^xsd:int;
+  nif:endIndex "165"^^xsd:int;
+  nif:lemma "ещё"@ru;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1301/char=138,200>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=154,161>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=166,169>.
+
+<http://lod.opencorpora.org/documents/doc1301/char=166,169>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №6 предложения №4 документа №1301 “был”"@ru,
+    "Word #6 of the sentence #4 of the document #1301 “был”"@en;
+  conll:ID "662701";
+  opencorpora:wordNumber "6"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1301/char=0,322>;
+  nif:anchorOf "был";
+  nif:beginIndex "166"^^xsd:int;
+  nif:endIndex "169"^^xsd:int;
+  nif:lemma "есть"@ru;
+  nif:posTag "VERB";
+  conll:POS_URI opencorpora:VERB;
+  nif:oliaLink 
+    opencorpora:VERB,
+    opencorpora:impf,
+    opencorpora:intr,
+    opencorpora:masc,
+    opencorpora:sing,
+    opencorpora:past,
+    opencorpora:indc;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1301/char=138,200>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=162,165>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=170,176>.
+
+<http://lod.opencorpora.org/documents/doc1301/char=170,176>
+  a nif:String, nif:Word, nif:OffsetBasedString;
+  rdfs:label 
+    "Слово №7 предложения №4 документа №1301 “третий”"@ru,
+    "Word #7 of the sentence #4 of the document #1301 “третий”"@en;
+  conll:ID "662702";
+  opencorpora:wordNumber "7"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1301/char=0,322>;
+  nif:anchorOf "третий";
+  nif:beginIndex "170"^^xsd:int;
+  nif:endIndex "176"^^xsd:int;
+  nif:lemma "третий"@ru;
+  nif:posTag "ADJF";
+  conll:POS_URI opencorpora:ADJF;
+  nif:oliaLink 
+    opencorpora:ADJF,
+    opencorpora:Anum,
+    opencorpora:masc,
+    opencorpora:sing;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1301/char=138,200>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=166,169>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=176,177>.
+
+<http://lod.opencorpora.org/documents/doc1301/char=176,177>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №8 предложения №4 документа №1301 “,”"@ru,
+    "Word #8 of the sentence #4 of the document #1301 “,”"@en;
+  conll:ID "662703";
+  opencorpora:wordNumber "8"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1301/char=0,322>;
+  nif:anchorOf ",";
+  nif:beginIndex "176"^^xsd:int;
+  nif:endIndex "177"^^xsd:int;
+  nif:lemma ","@ru;
+  nif:posTag "PNCT";
+  conll:POS_URI opencorpora:PNCT;
+  nif:oliaLink 
+    opencorpora:PNCT;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1301/char=138,200>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=170,176>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=178,185>.
+
+<http://lod.opencorpora.org/documents/doc1301/char=178,185>
+  a nif:String, nif:Word, nif:OffsetBasedString;
+  rdfs:label 
+    "Слово №9 предложения №4 документа №1301 “который”"@ru,
+    "Word #9 of the sentence #4 of the document #1301 “который”"@en;
+  conll:ID "662704";
+  opencorpora:wordNumber "9"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1301/char=0,322>;
+  nif:anchorOf "который";
+  nif:beginIndex "178"^^xsd:int;
+  nif:endIndex "185"^^xsd:int;
+  nif:lemma "который"@ru;
+  nif:posTag "ADJF";
+  conll:POS_URI opencorpora:ADJF;
+  nif:oliaLink 
+    opencorpora:ADJF,
+    opencorpora:Apro,
+    opencorpora:Subx,
+    opencorpora:Anph,
+    opencorpora:masc,
+    opencorpora:sing;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1301/char=138,200>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=176,177>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=186,194>.
+
+<http://lod.opencorpora.org/documents/doc1301/char=186,194>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №10 предложения №4 документа №1301 “раздувал”"@ru,
+    "Word #10 of the sentence #4 of the document #1301 “раздувал”"@en;
+  conll:ID "662705";
+  opencorpora:wordNumber "10"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1301/char=0,322>;
+  nif:anchorOf "раздувал";
+  nif:beginIndex "186"^^xsd:int;
+  nif:endIndex "194"^^xsd:int;
+  nif:lemma "раздуваю"@ru;
+  nif:posTag "VERB";
+  conll:POS_URI opencorpora:VERB;
+  nif:oliaLink 
+    opencorpora:VERB,
+    opencorpora:impf,
+    opencorpora:tran,
+    opencorpora:masc,
+    opencorpora:sing,
+    opencorpora:past,
+    opencorpora:indc;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1301/char=138,200>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=178,185>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=195,199>.
+
+<http://lod.opencorpora.org/documents/doc1301/char=195,199>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №11 предложения №4 документа №1301 “мехи”"@ru,
+    "Word #11 of the sentence #4 of the document #1301 “мехи”"@en;
+  conll:ID "662706";
+  opencorpora:wordNumber "11"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1301/char=0,322>;
+  nif:anchorOf "мехи";
+  nif:beginIndex "195"^^xsd:int;
+  nif:endIndex "199"^^xsd:int;
+  nif:lemma "мех"@ru;
+  nif:posTag "NOUN";
+  conll:POS_URI opencorpora:NOUN;
+  nif:oliaLink 
+    opencorpora:NOUN,
+    opencorpora:inan,
+    opencorpora:masc,
+    opencorpora:plur,
+    opencorpora:accs;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1301/char=138,200>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=186,194>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=199,200>.
+
+<http://lod.opencorpora.org/documents/doc1301/char=199,200>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №12 предложения №4 документа №1301 “.”"@ru,
+    "Word #12 of the sentence #4 of the document #1301 “.”"@en;
+  conll:ID "662707";
+  opencorpora:wordNumber "12"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1301/char=0,322>;
+  nif:anchorOf ".";
+  nif:beginIndex "199"^^xsd:int;
+  nif:endIndex "200"^^xsd:int;
+  nif:lemma "."@ru;
+  nif:posTag "PNCT";
+  conll:POS_URI opencorpora:PNCT;
+  nif:oliaLink 
+    opencorpora:PNCT;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1301/char=138,200>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=195,199>.
+
+<http://lod.opencorpora.org/documents/doc1301/char=201,239>
+  a nif:String, nif:Sentence, nif:OffsetBasedString;
+  rdfs:label 
+    "Предложение №5 документа №1301 “Органу явно тесно в концертном классе.”"@ru,
+    "Sentence #5 of the document #1301 “Органу явно тесно в концертном классе.”"@en;
+  conll:SENTENCE_ID "37077";
+  opencorpora:sentenceNumber "5"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1301/char=0,322>;
+  nif:anchorOf """Органу явно тесно в концертном классе.""";
+  nif:beginIndex "201"^^xsd:int;
+  nif:endIndex "239"^^xsd:int;
+  nif:previousSentence 
+    <http://lod.opencorpora.org/documents/doc1301/char=138,200>;
+  nif:nextSentence 
+    <http://lod.opencorpora.org/documents/doc1301/char=240,292>;
+  nif:firstWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=201,207>;
+  nif:word 
+    <http://lod.opencorpora.org/documents/doc1301/char=201,207>,
+    <http://lod.opencorpora.org/documents/doc1301/char=208,212>,
+    <http://lod.opencorpora.org/documents/doc1301/char=213,218>,
+    <http://lod.opencorpora.org/documents/doc1301/char=219,220>,
+    <http://lod.opencorpora.org/documents/doc1301/char=221,231>,
+    <http://lod.opencorpora.org/documents/doc1301/char=232,238>,
+    <http://lod.opencorpora.org/documents/doc1301/char=238,239>.
+
+<http://lod.opencorpora.org/documents/doc1301/char=201,207>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №1 предложения №5 документа №1301 “Органу”"@ru,
+    "Word #1 of the sentence #5 of the document #1301 “Органу”"@en;
+  conll:ID "662708";
+  opencorpora:wordNumber "1"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1301/char=0,322>;
+  nif:anchorOf "Органу";
+  nif:beginIndex "201"^^xsd:int;
+  nif:endIndex "207"^^xsd:int;
+  nif:lemma "орган"@ru;
+  nif:posTag "NOUN";
+  conll:POS_URI opencorpora:NOUN;
+  nif:oliaLink 
+    opencorpora:NOUN,
+    opencorpora:inan,
+    opencorpora:masc,
+    opencorpora:sing,
+    opencorpora:datv;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1301/char=201,239>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=208,212>.
+
+<http://lod.opencorpora.org/documents/doc1301/char=208,212>
+  a nif:String, nif:Word, nif:OffsetBasedString;
+  rdfs:label 
+    "Слово №2 предложения №5 документа №1301 “явно”"@ru,
+    "Word #2 of the sentence #5 of the document #1301 “явно”"@en;
+  conll:ID "662709";
+  opencorpora:wordNumber "2"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1301/char=0,322>;
+  nif:anchorOf "явно";
+  nif:beginIndex "208"^^xsd:int;
+  nif:endIndex "212"^^xsd:int;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1301/char=201,239>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=201,207>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=213,218>.
+
+<http://lod.opencorpora.org/documents/doc1301/char=213,218>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №3 предложения №5 документа №1301 “тесно”"@ru,
+    "Word #3 of the sentence #5 of the document #1301 “тесно”"@en;
+  conll:ID "662710";
+  opencorpora:wordNumber "3"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1301/char=0,322>;
+  nif:anchorOf "тесно";
+  nif:beginIndex "213"^^xsd:int;
+  nif:endIndex "218"^^xsd:int;
+  nif:lemma "тесно"@ru;
+  nif:posTag "ADVB";
+  conll:POS_URI opencorpora:ADVB;
+  nif:oliaLink 
+    opencorpora:ADVB,
+    opencorpora:Prdx;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1301/char=201,239>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=208,212>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=219,220>.
+
+<http://lod.opencorpora.org/documents/doc1301/char=219,220>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №4 предложения №5 документа №1301 “в”"@ru,
+    "Word #4 of the sentence #5 of the document #1301 “в”"@en;
+  conll:ID "662711";
+  opencorpora:wordNumber "4"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1301/char=0,322>;
+  nif:anchorOf "в";
+  nif:beginIndex "219"^^xsd:int;
+  nif:endIndex "220"^^xsd:int;
+  nif:lemma "в"@ru;
+  nif:posTag "PREP";
+  conll:POS_URI opencorpora:PREP;
+  nif:oliaLink 
+    opencorpora:PREP;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1301/char=201,239>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=213,218>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=221,231>.
+
+<http://lod.opencorpora.org/documents/doc1301/char=221,231>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №5 предложения №5 документа №1301 “концертном”"@ru,
+    "Word #5 of the sentence #5 of the document #1301 “концертном”"@en;
+  conll:ID "662712";
+  opencorpora:wordNumber "5"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1301/char=0,322>;
+  nif:anchorOf "концертном";
+  nif:beginIndex "221"^^xsd:int;
+  nif:endIndex "231"^^xsd:int;
+  nif:lemma "концертный"@ru;
+  nif:posTag "ADJF";
+  conll:POS_URI opencorpora:ADJF;
+  nif:oliaLink 
+    opencorpora:ADJF,
+    opencorpora:Qual,
+    opencorpora:masc,
+    opencorpora:sing,
+    opencorpora:loct;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1301/char=201,239>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=219,220>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=232,238>.
+
+<http://lod.opencorpora.org/documents/doc1301/char=232,238>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №6 предложения №5 документа №1301 “классе”"@ru,
+    "Word #6 of the sentence #5 of the document #1301 “классе”"@en;
+  conll:ID "662713";
+  opencorpora:wordNumber "6"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1301/char=0,322>;
+  nif:anchorOf "классе";
+  nif:beginIndex "232"^^xsd:int;
+  nif:endIndex "238"^^xsd:int;
+  nif:lemma "класс"@ru;
+  nif:posTag "NOUN";
+  conll:POS_URI opencorpora:NOUN;
+  nif:oliaLink 
+    opencorpora:NOUN,
+    opencorpora:inan,
+    opencorpora:masc,
+    opencorpora:sing,
+    opencorpora:loct;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1301/char=201,239>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=221,231>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=238,239>.
+
+<http://lod.opencorpora.org/documents/doc1301/char=238,239>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №7 предложения №5 документа №1301 “.”"@ru,
+    "Word #7 of the sentence #5 of the document #1301 “.”"@en;
+  conll:ID "662714";
+  opencorpora:wordNumber "7"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1301/char=0,322>;
+  nif:anchorOf ".";
+  nif:beginIndex "238"^^xsd:int;
+  nif:endIndex "239"^^xsd:int;
+  nif:lemma "."@ru;
+  nif:posTag "PNCT";
+  conll:POS_URI opencorpora:PNCT;
+  nif:oliaLink 
+    opencorpora:PNCT;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1301/char=201,239>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=232,238>.
+
+<http://lod.opencorpora.org/documents/doc1301/char=240,292>
+  a nif:String, nif:Sentence, nif:OffsetBasedString;
+  rdfs:label 
+    "Предложение №6 документа №1301 “Очевидно, собор - резонатор - это часть инструмента.”"@ru,
+    "Sentence #6 of the document #1301 “Очевидно, собор - резонатор - это часть инструмента.”"@en;
+  conll:SENTENCE_ID "37078";
+  opencorpora:sentenceNumber "6"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1301/char=0,322>;
+  nif:anchorOf """Очевидно, собор - резонатор - это часть инструмента.""";
+  nif:beginIndex "240"^^xsd:int;
+  nif:endIndex "292"^^xsd:int;
+  nif:previousSentence 
+    <http://lod.opencorpora.org/documents/doc1301/char=201,239>;
+  nif:nextSentence 
+    <http://lod.opencorpora.org/documents/doc1301/char=293,322>;
+  nif:firstWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=240,248>;
+  nif:word 
+    <http://lod.opencorpora.org/documents/doc1301/char=240,248>,
+    <http://lod.opencorpora.org/documents/doc1301/char=248,249>,
+    <http://lod.opencorpora.org/documents/doc1301/char=250,255>,
+    <http://lod.opencorpora.org/documents/doc1301/char=256,257>,
+    <http://lod.opencorpora.org/documents/doc1301/char=258,267>,
+    <http://lod.opencorpora.org/documents/doc1301/char=268,269>,
+    <http://lod.opencorpora.org/documents/doc1301/char=270,273>,
+    <http://lod.opencorpora.org/documents/doc1301/char=274,279>,
+    <http://lod.opencorpora.org/documents/doc1301/char=280,291>,
+    <http://lod.opencorpora.org/documents/doc1301/char=291,292>.
+
+<http://lod.opencorpora.org/documents/doc1301/char=240,248>
+  a nif:String, nif:Word, nif:OffsetBasedString;
+  rdfs:label 
+    "Слово №1 предложения №6 документа №1301 “Очевидно”"@ru,
+    "Word #1 of the sentence #6 of the document #1301 “Очевидно”"@en;
+  conll:ID "662715";
+  opencorpora:wordNumber "1"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1301/char=0,322>;
+  nif:anchorOf "Очевидно";
+  nif:beginIndex "240"^^xsd:int;
+  nif:endIndex "248"^^xsd:int;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1301/char=240,292>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=248,249>.
+
+<http://lod.opencorpora.org/documents/doc1301/char=248,249>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №2 предложения №6 документа №1301 “,”"@ru,
+    "Word #2 of the sentence #6 of the document #1301 “,”"@en;
+  conll:ID "662716";
+  opencorpora:wordNumber "2"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1301/char=0,322>;
+  nif:anchorOf ",";
+  nif:beginIndex "248"^^xsd:int;
+  nif:endIndex "249"^^xsd:int;
+  nif:lemma ","@ru;
+  nif:posTag "PNCT";
+  conll:POS_URI opencorpora:PNCT;
+  nif:oliaLink 
+    opencorpora:PNCT;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1301/char=240,292>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=240,248>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=250,255>.
+
+<http://lod.opencorpora.org/documents/doc1301/char=250,255>
+  a nif:String, nif:Word, nif:OffsetBasedString;
+  rdfs:label 
+    "Слово №3 предложения №6 документа №1301 “собор”"@ru,
+    "Word #3 of the sentence #6 of the document #1301 “собор”"@en;
+  conll:ID "662717";
+  opencorpora:wordNumber "3"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1301/char=0,322>;
+  nif:anchorOf "собор";
+  nif:beginIndex "250"^^xsd:int;
+  nif:endIndex "255"^^xsd:int;
+  nif:lemma "собор"@ru;
+  nif:posTag "NOUN";
+  conll:POS_URI opencorpora:NOUN;
+  nif:oliaLink 
+    opencorpora:NOUN,
+    opencorpora:inan,
+    opencorpora:masc,
+    opencorpora:sing;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1301/char=240,292>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=248,249>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=256,257>.
+
+<http://lod.opencorpora.org/documents/doc1301/char=256,257>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №4 предложения №6 документа №1301 “-”"@ru,
+    "Word #4 of the sentence #6 of the document #1301 “-”"@en;
+  conll:ID "662718";
+  opencorpora:wordNumber "4"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1301/char=0,322>;
+  nif:anchorOf "-";
+  nif:beginIndex "256"^^xsd:int;
+  nif:endIndex "257"^^xsd:int;
+  nif:lemma "-"@ru;
+  nif:posTag "PNCT";
+  conll:POS_URI opencorpora:PNCT;
+  nif:oliaLink 
+    opencorpora:PNCT;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1301/char=240,292>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=250,255>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=258,267>.
+
+<http://lod.opencorpora.org/documents/doc1301/char=258,267>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №5 предложения №6 документа №1301 “резонатор”"@ru,
+    "Word #5 of the sentence #6 of the document #1301 “резонатор”"@en;
+  conll:ID "662719";
+  opencorpora:wordNumber "5"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1301/char=0,322>;
+  nif:anchorOf "резонатор";
+  nif:beginIndex "258"^^xsd:int;
+  nif:endIndex "267"^^xsd:int;
+  nif:lemma "резонатор"@ru;
+  nif:posTag "NOUN";
+  conll:POS_URI opencorpora:NOUN;
+  nif:oliaLink 
+    opencorpora:NOUN,
+    opencorpora:inan,
+    opencorpora:masc,
+    opencorpora:sing,
+    opencorpora:nomn;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1301/char=240,292>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=256,257>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=268,269>.
+
+<http://lod.opencorpora.org/documents/doc1301/char=268,269>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №6 предложения №6 документа №1301 “-”"@ru,
+    "Word #6 of the sentence #6 of the document #1301 “-”"@en;
+  conll:ID "662720";
+  opencorpora:wordNumber "6"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1301/char=0,322>;
+  nif:anchorOf "-";
+  nif:beginIndex "268"^^xsd:int;
+  nif:endIndex "269"^^xsd:int;
+  nif:lemma "-"@ru;
+  nif:posTag "PNCT";
+  conll:POS_URI opencorpora:PNCT;
+  nif:oliaLink 
+    opencorpora:PNCT;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1301/char=240,292>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=258,267>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=270,273>.
+
+<http://lod.opencorpora.org/documents/doc1301/char=270,273>
+  a nif:String, nif:Word, nif:OffsetBasedString;
+  rdfs:label 
+    "Слово №7 предложения №6 документа №1301 “это”"@ru,
+    "Word #7 of the sentence #6 of the document #1301 “это”"@en;
+  conll:ID "662721";
+  opencorpora:wordNumber "7"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1301/char=0,322>;
+  nif:anchorOf "это";
+  nif:beginIndex "270"^^xsd:int;
+  nif:endIndex "273"^^xsd:int;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1301/char=240,292>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=268,269>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=274,279>.
+
+<http://lod.opencorpora.org/documents/doc1301/char=274,279>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №8 предложения №6 документа №1301 “часть”"@ru,
+    "Word #8 of the sentence #6 of the document #1301 “часть”"@en;
+  conll:ID "662722";
+  opencorpora:wordNumber "8"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1301/char=0,322>;
+  nif:anchorOf "часть";
+  nif:beginIndex "274"^^xsd:int;
+  nif:endIndex "279"^^xsd:int;
+  nif:lemma "часть"@ru;
+  nif:posTag "NOUN";
+  conll:POS_URI opencorpora:NOUN;
+  nif:oliaLink 
+    opencorpora:NOUN,
+    opencorpora:inan,
+    opencorpora:femn,
+    opencorpora:sing,
+    opencorpora:nomn;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1301/char=240,292>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=270,273>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=280,291>.
+
+<http://lod.opencorpora.org/documents/doc1301/char=280,291>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №9 предложения №6 документа №1301 “инструмента”"@ru,
+    "Word #9 of the sentence #6 of the document #1301 “инструмента”"@en;
+  conll:ID "662723";
+  opencorpora:wordNumber "9"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1301/char=0,322>;
+  nif:anchorOf "инструмента";
+  nif:beginIndex "280"^^xsd:int;
+  nif:endIndex "291"^^xsd:int;
+  nif:lemma "инструмент"@ru;
+  nif:posTag "NOUN";
+  conll:POS_URI opencorpora:NOUN;
+  nif:oliaLink 
+    opencorpora:NOUN,
+    opencorpora:inan,
+    opencorpora:masc,
+    opencorpora:sing,
+    opencorpora:gent;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1301/char=240,292>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=274,279>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=291,292>.
+
+<http://lod.opencorpora.org/documents/doc1301/char=291,292>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №10 предложения №6 документа №1301 “.”"@ru,
+    "Word #10 of the sentence #6 of the document #1301 “.”"@en;
+  conll:ID "662724";
+  opencorpora:wordNumber "10"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1301/char=0,322>;
+  nif:anchorOf ".";
+  nif:beginIndex "291"^^xsd:int;
+  nif:endIndex "292"^^xsd:int;
+  nif:lemma "."@ru;
+  nif:posTag "PNCT";
+  conll:POS_URI opencorpora:PNCT;
+  nif:oliaLink 
+    opencorpora:PNCT;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1301/char=240,292>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=280,291>.
+
+<http://lod.opencorpora.org/documents/doc1301/char=293,322>
+  a nif:String, nif:Sentence, nif:OffsetBasedString;
+  rdfs:label 
+    "Предложение №7 документа №1301 “Один орган - это уже оркестр.”"@ru,
+    "Sentence #7 of the document #1301 “Один орган - это уже оркестр.”"@en;
+  conll:SENTENCE_ID "37079";
+  opencorpora:sentenceNumber "7"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1301/char=0,322>;
+  nif:anchorOf """Один орган - это уже оркестр.""";
+  nif:beginIndex "293"^^xsd:int;
+  nif:endIndex "322"^^xsd:int;
+  nif:previousSentence 
+    <http://lod.opencorpora.org/documents/doc1301/char=240,292>;
+  nif:firstWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=293,297>;
+  nif:word 
+    <http://lod.opencorpora.org/documents/doc1301/char=293,297>,
+    <http://lod.opencorpora.org/documents/doc1301/char=298,303>,
+    <http://lod.opencorpora.org/documents/doc1301/char=304,305>,
+    <http://lod.opencorpora.org/documents/doc1301/char=306,309>,
+    <http://lod.opencorpora.org/documents/doc1301/char=310,313>,
+    <http://lod.opencorpora.org/documents/doc1301/char=314,321>,
+    <http://lod.opencorpora.org/documents/doc1301/char=321,322>.
+
+<http://lod.opencorpora.org/documents/doc1301/char=293,297>
+  a nif:String, nif:Word, nif:OffsetBasedString;
+  rdfs:label 
+    "Слово №1 предложения №7 документа №1301 “Один”"@ru,
+    "Word #1 of the sentence #7 of the document #1301 “Один”"@en;
+  conll:ID "662725";
+  opencorpora:wordNumber "1"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1301/char=0,322>;
+  nif:anchorOf "Один";
+  nif:beginIndex "293"^^xsd:int;
+  nif:endIndex "297"^^xsd:int;
+  nif:lemma "один"@ru;
+  nif:posTag "ADJF";
+  conll:POS_URI opencorpora:ADJF;
+  nif:oliaLink 
+    opencorpora:ADJF,
+    opencorpora:Apro,
+    opencorpora:Anum,
+    opencorpora:masc,
+    opencorpora:sing;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1301/char=293,322>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=298,303>.
+
+<http://lod.opencorpora.org/documents/doc1301/char=298,303>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №2 предложения №7 документа №1301 “орган”"@ru,
+    "Word #2 of the sentence #7 of the document #1301 “орган”"@en;
+  conll:ID "662726";
+  opencorpora:wordNumber "2"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1301/char=0,322>;
+  nif:anchorOf "орган";
+  nif:beginIndex "298"^^xsd:int;
+  nif:endIndex "303"^^xsd:int;
+  nif:lemma "орган"@ru;
+  nif:posTag "NOUN";
+  conll:POS_URI opencorpora:NOUN;
+  nif:oliaLink 
+    opencorpora:NOUN,
+    opencorpora:inan,
+    opencorpora:masc,
+    opencorpora:sing,
+    opencorpora:nomn;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1301/char=293,322>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=293,297>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=304,305>.
+
+<http://lod.opencorpora.org/documents/doc1301/char=304,305>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №3 предложения №7 документа №1301 “-”"@ru,
+    "Word #3 of the sentence #7 of the document #1301 “-”"@en;
+  conll:ID "662727";
+  opencorpora:wordNumber "3"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1301/char=0,322>;
+  nif:anchorOf "-";
+  nif:beginIndex "304"^^xsd:int;
+  nif:endIndex "305"^^xsd:int;
+  nif:lemma "-"@ru;
+  nif:posTag "PNCT";
+  conll:POS_URI opencorpora:PNCT;
+  nif:oliaLink 
+    opencorpora:PNCT;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1301/char=293,322>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=298,303>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=306,309>.
+
+<http://lod.opencorpora.org/documents/doc1301/char=306,309>
+  a nif:String, nif:Word, nif:OffsetBasedString;
+  rdfs:label 
+    "Слово №4 предложения №7 документа №1301 “это”"@ru,
+    "Word #4 of the sentence #7 of the document #1301 “это”"@en;
+  conll:ID "662728";
+  opencorpora:wordNumber "4"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1301/char=0,322>;
+  nif:anchorOf "это";
+  nif:beginIndex "306"^^xsd:int;
+  nif:endIndex "309"^^xsd:int;
+  nif:lemma "это"@ru;
+  nif:posTag "NPRO";
+  conll:POS_URI opencorpora:NPRO;
+  nif:oliaLink 
+    opencorpora:NPRO,
+    opencorpora:neut,
+    opencorpora:sing;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1301/char=293,322>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=304,305>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=310,313>.
+
+<http://lod.opencorpora.org/documents/doc1301/char=310,313>
+  a nif:String, nif:Word, nif:OffsetBasedString;
+  rdfs:label 
+    "Слово №5 предложения №7 документа №1301 “уже”"@ru,
+    "Word #5 of the sentence #7 of the document #1301 “уже”"@en;
+  conll:ID "662729";
+  opencorpora:wordNumber "5"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1301/char=0,322>;
+  nif:anchorOf "уже";
+  nif:beginIndex "310"^^xsd:int;
+  nif:endIndex "313"^^xsd:int;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1301/char=293,322>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=306,309>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=314,321>.
+
+<http://lod.opencorpora.org/documents/doc1301/char=314,321>
+  a nif:String, nif:Word, nif:OffsetBasedString;
+  rdfs:label 
+    "Слово №6 предложения №7 документа №1301 “оркестр”"@ru,
+    "Word #6 of the sentence #7 of the document #1301 “оркестр”"@en;
+  conll:ID "662730";
+  opencorpora:wordNumber "6"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1301/char=0,322>;
+  nif:anchorOf "оркестр";
+  nif:beginIndex "314"^^xsd:int;
+  nif:endIndex "321"^^xsd:int;
+  nif:lemma "оркестр"@ru;
+  nif:posTag "NOUN";
+  conll:POS_URI opencorpora:NOUN;
+  nif:oliaLink 
+    opencorpora:NOUN,
+    opencorpora:inan,
+    opencorpora:masc,
+    opencorpora:sing;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1301/char=293,322>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=310,313>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=321,322>.
+
+<http://lod.opencorpora.org/documents/doc1301/char=321,322>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №7 предложения №7 документа №1301 “.”"@ru,
+    "Word #7 of the sentence #7 of the document #1301 “.”"@en;
+  conll:ID "662731";
+  opencorpora:wordNumber "7"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc1301/char=0,322>;
+  nif:anchorOf ".";
+  nif:beginIndex "321"^^xsd:int;
+  nif:endIndex "322"^^xsd:int;
+  nif:lemma "."@ru;
+  nif:posTag "PNCT";
+  conll:POS_URI opencorpora:PNCT;
+  nif:oliaLink 
+    opencorpora:PNCT;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc1301/char=293,322>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc1301/char=314,321>.
+
+

@@ -1,0 +1,311 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix schema: <http://schema.org/>.
+@prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#>.
+@prefix conll: <http://purl.org/acoli/conll#>.
+@prefix opencorpora: <http://lod.opencorpora.org/ontology#>.
+
+<http://lod.opencorpora.org/documents/doc2817>
+  a foaf:Document;
+  dcterms:title "0003705 Финансовый прогноз";
+  owl:sameAs <http://vgiv.livejournal.com/3705.html>.
+
+<http://lod.opencorpora.org/documents/doc2817/char=0,68>
+  a nif:String, nif:Context, nif:OffsetBasedString;
+  rdfs:label 
+    "Текст документа №2817 “0003705 Финансовый прогноз”"@ru,
+    "Text of the document#2817 “0003705 Финансовый прогноз”"@en;
+  conll:DOCUMENT_ID "2817";
+  nif:isString """Финансовый прогноз
+Теперь участки на Луне должны резко подешеветь...""";
+  nif:beginIndex "0"^^xsd:int;
+  nif:endIndex "68"^^xsd:int;
+  opencorpora:belongsToCollection 
+    <http://lod.opencorpora.org/opencorpora>;
+  nif:sourceUrl 
+    <http://lod.opencorpora.org/documents/doc2817>.
+
+<http://lod.opencorpora.org/documents/doc2817/char=0,18>
+  a nif:String, nif:Sentence, nif:OffsetBasedString;
+  rdfs:label 
+    "Предложение №1 документа №2817 “Финансовый прогноз”"@ru,
+    "Sentence #1 of the document #2817 “Финансовый прогноз”"@en;
+  conll:SENTENCE_ID "69172";
+  opencorpora:sentenceNumber "1"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc2817/char=0,68>;
+  nif:anchorOf """Финансовый прогноз""";
+  nif:beginIndex "0"^^xsd:int;
+  nif:endIndex "18"^^xsd:int;
+  nif:nextSentence 
+    <http://lod.opencorpora.org/documents/doc2817/char=19,68>;
+  nif:firstWord 
+    <http://lod.opencorpora.org/documents/doc2817/char=0,10>;
+  nif:word 
+    <http://lod.opencorpora.org/documents/doc2817/char=0,10>,
+    <http://lod.opencorpora.org/documents/doc2817/char=11,18>.
+
+<http://lod.opencorpora.org/documents/doc2817/char=0,10>
+  a nif:String, nif:Word, nif:OffsetBasedString;
+  rdfs:label 
+    "Слово №1 предложения №1 документа №2817 “Финансовый”"@ru,
+    "Word #1 of the sentence #1 of the document #2817 “Финансовый”"@en;
+  conll:ID "1252049";
+  opencorpora:wordNumber "1"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc2817/char=0,68>;
+  nif:anchorOf "Финансовый";
+  nif:beginIndex "0"^^xsd:int;
+  nif:endIndex "10"^^xsd:int;
+  nif:lemma "финансовый"@ru;
+  nif:posTag "ADJF";
+  conll:POS_URI opencorpora:ADJF;
+  nif:oliaLink 
+    opencorpora:ADJF,
+    opencorpora:masc,
+    opencorpora:sing;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc2817/char=0,18>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc2817/char=11,18>.
+
+<http://lod.opencorpora.org/documents/doc2817/char=11,18>
+  a nif:String, nif:Word, nif:OffsetBasedString;
+  rdfs:label 
+    "Слово №2 предложения №1 документа №2817 “прогноз”"@ru,
+    "Word #2 of the sentence #1 of the document #2817 “прогноз”"@en;
+  conll:ID "1252050";
+  opencorpora:wordNumber "2"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc2817/char=0,68>;
+  nif:anchorOf "прогноз";
+  nif:beginIndex "11"^^xsd:int;
+  nif:endIndex "18"^^xsd:int;
+  nif:lemma "прогноз"@ru;
+  nif:posTag "NOUN";
+  conll:POS_URI opencorpora:NOUN;
+  nif:oliaLink 
+    opencorpora:NOUN,
+    opencorpora:inan,
+    opencorpora:masc,
+    opencorpora:sing;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc2817/char=0,18>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc2817/char=0,10>.
+
+<http://lod.opencorpora.org/documents/doc2817/char=19,68>
+  a nif:String, nif:Sentence, nif:OffsetBasedString;
+  rdfs:label 
+    "Предложение №2 документа №2817 “Теперь участки на Луне должны резко подешеветь...”"@ru,
+    "Sentence #2 of the document #2817 “Теперь участки на Луне должны резко подешеветь...”"@en;
+  conll:SENTENCE_ID "69173";
+  opencorpora:sentenceNumber "2"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc2817/char=0,68>;
+  nif:anchorOf """Теперь участки на Луне должны резко подешеветь...""";
+  nif:beginIndex "19"^^xsd:int;
+  nif:endIndex "68"^^xsd:int;
+  nif:previousSentence 
+    <http://lod.opencorpora.org/documents/doc2817/char=0,18>;
+  nif:firstWord 
+    <http://lod.opencorpora.org/documents/doc2817/char=19,25>;
+  nif:word 
+    <http://lod.opencorpora.org/documents/doc2817/char=19,25>,
+    <http://lod.opencorpora.org/documents/doc2817/char=26,33>,
+    <http://lod.opencorpora.org/documents/doc2817/char=34,36>,
+    <http://lod.opencorpora.org/documents/doc2817/char=37,41>,
+    <http://lod.opencorpora.org/documents/doc2817/char=42,48>,
+    <http://lod.opencorpora.org/documents/doc2817/char=49,54>,
+    <http://lod.opencorpora.org/documents/doc2817/char=55,65>,
+    <http://lod.opencorpora.org/documents/doc2817/char=65,68>.
+
+<http://lod.opencorpora.org/documents/doc2817/char=19,25>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №1 предложения №2 документа №2817 “Теперь”"@ru,
+    "Word #1 of the sentence #2 of the document #2817 “Теперь”"@en;
+  conll:ID "1252051";
+  opencorpora:wordNumber "1"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc2817/char=0,68>;
+  nif:anchorOf "Теперь";
+  nif:beginIndex "19"^^xsd:int;
+  nif:endIndex "25"^^xsd:int;
+  nif:lemma "теперь"@ru;
+  nif:posTag "ADVB";
+  conll:POS_URI opencorpora:ADVB;
+  nif:oliaLink 
+    opencorpora:ADVB;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc2817/char=19,68>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc2817/char=26,33>.
+
+<http://lod.opencorpora.org/documents/doc2817/char=26,33>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №2 предложения №2 документа №2817 “участки”"@ru,
+    "Word #2 of the sentence #2 of the document #2817 “участки”"@en;
+  conll:ID "1252052";
+  opencorpora:wordNumber "2"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc2817/char=0,68>;
+  nif:anchorOf "участки";
+  nif:beginIndex "26"^^xsd:int;
+  nif:endIndex "33"^^xsd:int;
+  nif:lemma "участок"@ru;
+  nif:posTag "NOUN";
+  conll:POS_URI opencorpora:NOUN;
+  nif:oliaLink 
+    opencorpora:NOUN,
+    opencorpora:inan,
+    opencorpora:masc,
+    opencorpora:plur,
+    opencorpora:nomn;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc2817/char=19,68>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc2817/char=19,25>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc2817/char=34,36>.
+
+<http://lod.opencorpora.org/documents/doc2817/char=34,36>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №3 предложения №2 документа №2817 “на”"@ru,
+    "Word #3 of the sentence #2 of the document #2817 “на”"@en;
+  conll:ID "1252053";
+  opencorpora:wordNumber "3"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc2817/char=0,68>;
+  nif:anchorOf "на";
+  nif:beginIndex "34"^^xsd:int;
+  nif:endIndex "36"^^xsd:int;
+  nif:lemma "на"@ru;
+  nif:posTag "PREP";
+  conll:POS_URI opencorpora:PREP;
+  nif:oliaLink 
+    opencorpora:PREP;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc2817/char=19,68>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc2817/char=26,33>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc2817/char=37,41>.
+
+<http://lod.opencorpora.org/documents/doc2817/char=37,41>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №4 предложения №2 документа №2817 “Луне”"@ru,
+    "Word #4 of the sentence #2 of the document #2817 “Луне”"@en;
+  conll:ID "1252054";
+  opencorpora:wordNumber "4"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc2817/char=0,68>;
+  nif:anchorOf "Луне";
+  nif:beginIndex "37"^^xsd:int;
+  nif:endIndex "41"^^xsd:int;
+  nif:lemma "луна"@ru;
+  nif:posTag "NOUN";
+  conll:POS_URI opencorpora:NOUN;
+  nif:oliaLink 
+    opencorpora:NOUN,
+    opencorpora:inan,
+    opencorpora:femn,
+    opencorpora:sing,
+    opencorpora:loct;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc2817/char=19,68>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc2817/char=34,36>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc2817/char=42,48>.
+
+<http://lod.opencorpora.org/documents/doc2817/char=42,48>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №5 предложения №2 документа №2817 “должны”"@ru,
+    "Word #5 of the sentence #2 of the document #2817 “должны”"@en;
+  conll:ID "1252055";
+  opencorpora:wordNumber "5"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc2817/char=0,68>;
+  nif:anchorOf "должны";
+  nif:beginIndex "42"^^xsd:int;
+  nif:endIndex "48"^^xsd:int;
+  nif:lemma "должен"@ru;
+  nif:posTag "ADJS";
+  conll:POS_URI opencorpora:ADJS;
+  nif:oliaLink 
+    opencorpora:ADJS,
+    opencorpora:plur;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc2817/char=19,68>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc2817/char=37,41>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc2817/char=49,54>.
+
+<http://lod.opencorpora.org/documents/doc2817/char=49,54>
+  a nif:String, nif:Word, nif:OffsetBasedString;
+  rdfs:label 
+    "Слово №6 предложения №2 документа №2817 “резко”"@ru,
+    "Word #6 of the sentence #2 of the document #2817 “резко”"@en;
+  conll:ID "1252056";
+  opencorpora:wordNumber "6"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc2817/char=0,68>;
+  nif:anchorOf "резко";
+  nif:beginIndex "49"^^xsd:int;
+  nif:endIndex "54"^^xsd:int;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc2817/char=19,68>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc2817/char=42,48>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc2817/char=55,65>.
+
+<http://lod.opencorpora.org/documents/doc2817/char=55,65>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №7 предложения №2 документа №2817 “подешеветь”"@ru,
+    "Word #7 of the sentence #2 of the document #2817 “подешеветь”"@en;
+  conll:ID "1252057";
+  opencorpora:wordNumber "7"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc2817/char=0,68>;
+  nif:anchorOf "подешеветь";
+  nif:beginIndex "55"^^xsd:int;
+  nif:endIndex "65"^^xsd:int;
+  nif:lemma "подешеветь"@ru;
+  nif:posTag "INFN";
+  conll:POS_URI opencorpora:INFN;
+  nif:oliaLink 
+    opencorpora:INFN,
+    opencorpora:perf,
+    opencorpora:intr;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc2817/char=19,68>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc2817/char=49,54>;
+  nif:nextWord 
+    <http://lod.opencorpora.org/documents/doc2817/char=65,68>.
+
+<http://lod.opencorpora.org/documents/doc2817/char=65,68>
+  a nif:String, nif:Word, nif:OffsetBasedString, opencorpora:MorphologicallyDisambiguated;
+  rdfs:label 
+    "Слово №8 предложения №2 документа №2817 “...”"@ru,
+    "Word #8 of the sentence #2 of the document #2817 “...”"@en;
+  conll:ID "1252058";
+  opencorpora:wordNumber "8"^^xsd:int;
+  nif:referenceContext <http://lod.opencorpora.org/documents/doc2817/char=0,68>;
+  nif:anchorOf "...";
+  nif:beginIndex "65"^^xsd:int;
+  nif:endIndex "68"^^xsd:int;
+  nif:lemma "..."@ru;
+  nif:posTag "PNCT";
+  conll:POS_URI opencorpora:PNCT;
+  nif:oliaLink 
+    opencorpora:PNCT;
+  nif:sentence 
+    <http://lod.opencorpora.org/documents/doc2817/char=19,68>;
+  nif:previousWord 
+    <http://lod.opencorpora.org/documents/doc2817/char=55,65>.
+
+
